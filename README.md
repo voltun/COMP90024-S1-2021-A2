@@ -2,33 +2,27 @@
 COMP90024 Cloud &amp; Cluster Computing, Semester 1 2021, Assignment 2
 
 Team members:
-Snabhiraja
-Kenneth 
-Ryan Chow
-Yajing Zhang
-Nicholas Wong
+- Snabhiraja
+- Kenneth 
+- Ryan Chow
+- Yajing Zhang
+- Nicholas Wong
 
 
 Teams are expected to use:
-● a version-control system such as GitHub or Bitbucket for sharing source code.
-● MapReduce based implementations for analytics where appropriate, using CouchDB’s built in
-MapReduce capabilities.
-● The entire system should have scripted deployment capabilities. This means that your team
-will provide a script, which, when executed, will create and deploy one or more virtual
-machines and orchestrate the set up of all necessary software on said machines (e.g. CouchDB,
-the twitter harvesters, web servers etc.) to create a ready-to-run system. Note that this setup
-need not populate the database but demonstrate your ability to orchestrate the necessary
-software environment on the UniMelb Research Cloud. Teams should use Ansible
-(http://www.ansible.com/home) for this task.
-● Teams may wish to utilise container technologies such as Docker, but this is not mandatory.
-● The server side of your analytics web application may expose its data to the client through a
-ReSTful design. Authentication or authorization is NOT required for the web front end.
+- a version-control system such as GitHub or Bitbucket for sharing source code.
+- MapReduce based implementations for analytics where appropriate, using CouchDB’s built in MapReduce capabilities.
+- The entire system should have scripted deployment capabilities. This means that your team will provide a script, which, when executed, will create and deploy one or more virtual machines and orchestrate the set up of all necessary software on said machines (e.g. CouchDB, the twitter harvesters, web servers etc.) to create a ready-to-run system. Note that this setup need not populate the database but demonstrate your ability to orchestrate the necessary software environment on the UniMelb Research Cloud. Teams should use Ansible (http://www.ansible.com/home) for this task.
+- Teams may wish to utilise container technologies such as Docker, but this is not mandatory.
+- The server side of your analytics web application may expose its data to the client through a ReSTful design. Authentication or authorization is NOT required for the web front end.
+
 Teams are also encouraged to describe:
-● How fault-tolerant is your software setup? Is there a single point-of-failure?
-● Can your application and infrastructure dynamically scale out to meet demand?
+- How fault-tolerant is your software setup? Is there a single point-of-failure?
+- Can your application and infrastructure dynamically scale out to meet demand?
 
 
-**Assignment Description**
+<b>Assignment Description</b>
+
 The software engineering activity builds on the lecture materials describing Cloud systems and
 especially the UniMelb Research Cloud and its use of OpenStack; on data from the Twitter APIs, and
 CouchDB and the kinds of data analytics (e.g. MapReduce) that CouchDB supports as well as data from
