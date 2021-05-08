@@ -1,9 +1,19 @@
-import tweepy,json
+import tweepy, json, configparser, os
 
-access_token="437679061-ETGabTR6ZlFZeymd0taF9JuGsgipnQVk1kRtyT4X"
-access_token_secret="VCMPpNluQJGCk28qrQdau5lt5vS9HLG5vQxvDUgHKfrli"
-consumer_key="Wl5xYqP6L6effcQfE23aewTJR"
-consumer_secret="BBei97Aol6CxMdPQ4nfrQ6mWnQv3fZwtpFOvAkdAgVOhotnNmC"
+# Obtain full file path 
+pardir = os.path.dirname(os.path.abspath(__file__))
+filepath = os.path.join(pardir, '../auth.cfg')
+
+# Setup configparser to read in authentication credentials
+config = configparser.ConfigParser()
+config.read(filepath)
+
+access_token = config.get('Twitter_Auth','access_token')
+access_token_secret = config.get('Twitter_Auth','access_secret')
+consumer_key = config.get('Twitter_Auth','api_key')
+consumer_secret = config.get('Twitter_Auth','api_secret_key')
+
+# Establish authentication to Twitter's API
 auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_token_secret)
 
