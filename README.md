@@ -10,3 +10,5 @@ Team members:
 
 <b>IMPORTANT:</b>
 - Duplicate "auth_default.cfg" file and fill in the relevant API keys and tokens. Rename the file as "auth.cfg".
+- To run playbook: ./run-nectar.sh &lt;MRC email&gt;
+- Note: Twitter API developer account should have at least standard v1.1 access.
