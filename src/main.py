@@ -1,4 +1,4 @@
-import configparser
+import configparser, os
 
 CONFIG_FILENAME = "auth.cfg"
 
