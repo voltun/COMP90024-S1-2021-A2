@@ -21,7 +21,10 @@ Team members:
 password:1234
 
 - Access via Command Line Tool(The curl utility)
+>Example import request
+curl -H "Content-Type: application/json" --data-binary @/home/xxx/data.json https://usr:pwd@host:5984/someDatabase/_bulk_docs/
 >Example get request
 `shell> curl http://admin:password@127.0.0.1:5984`<br/>
 `shell> curl http://admin:1234d@172.26.129.212:5984/`<br/>
 [check here for more commands](https://docs.couchdb.org/en/stable/intro/curl.html)
+
