@@ -1,5 +1,5 @@
 import tweepy, json, configparser, os
-#from geopy.geocoders import Nominatim
+from getPostCode import getPostCode
 
 # Obtain full file path
 pardir = os.path.dirname(os.path.abspath(__file__))
@@ -19,18 +19,26 @@ auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_token_secret)
 
 api = tweepy.API(auth)
-places = api.geo_search(query="Melbourne",granularity="city")
+places = api.geo_search(query="Australia",granularity="country")
 place_id = places[0].id
+api.wait_on_rate_limit = True
 tweets = tweepy.Cursor(api.search,
                        q="place:%s" % place_id,
-                       lang="en",).items(100)
-count = 0
+                       lang="en").items(10000000)
+
 file=open("tweet2.txt","w")
 
 for tweet in tweets:
     if tweet.coordinates != None:
         tweet = tweet._json
-        file.write(json.dumps(tweet)+ '\n')
+        long,lat = tweet['coordinates']['coordinates']
+        postcode = getPostCode(lat,long)
+        if postcode == None:
+            pass
+        else:
+            temp = {"postcode":postcode}
+            tweet['coordinates'].update(temp)
+            file.write(json.dumps(tweet)+ '\n')
 
 tweets_data_path='tweet2.txt'
 tweets_data=[]
@@ -40,9 +48,4 @@ for line in tweets_file:
     tweet=json.loads(line)
     tweets_data.append(tweet)
 tweets_file.close()
-
-# from geopy.geocoders import Nominatim
-# geolocator = Nominatim(user_agent="test_app")
-# location = geolocator.reverse("27.1751, 78.0421")
-# print(location.raw['address']['country'])
 
