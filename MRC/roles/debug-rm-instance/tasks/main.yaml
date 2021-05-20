@@ -1,0 +1,26 @@
+---
+# Remove deployed instances
+- name: Removing instances
+  os_server:
+    name: '{{ item.openstack.name }}'
+    wait: yes
+    timeout: 30
+    state: absent
+  loop: '{{ os_instance.results }}'
+
+# Remove deployed volumes
+- name: Removing volumes
+  os_volume:
+    display_name: '{{ item.display_name }}'
+    wait: yes
+    timeout: 30
+    state: absent
+  loop: '{{ os_vol.results }}'
+
+# Remove deployed security groups
+- name: Removing security groups
+  os_security_group:
+    name: '{{ item }}'
+    state: absent
+  loop: '{{ sg_names }}'
+

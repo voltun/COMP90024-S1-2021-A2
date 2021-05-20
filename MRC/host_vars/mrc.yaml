@@ -3,9 +3,18 @@ availability_zone: melbourne-qh2-uom
 
 # Volume
 volumes:
-  - vol_name: VM01-vol-1
-    vol_size: 10
-    vol_desc: 'Volume for Harvester'
+  - vol_name: HARVESTER-vol-1
+    vol_size: 100
+    vol_desc: 'Volume for Tweeter/AURIN Harvester'
+  - vol_name: DB-vol-1
+    vol_size: 100
+    vol_desc: 'Volume for CouchDB Cluster #1'
+  - vol_name: DB-vol-2
+    vol_size: 100
+    vol_desc: 'Volume for CouchDB Cluster #2'
+  - vol_name: DB-vol-3
+    vol_size: 100
+    vol_desc: 'Volume for CouchDB Cluster #3'
 
 # Security group
 security_groups:
@@ -25,9 +34,15 @@ security_groups:
 # Instance
 instances:
   - name: VM01-harvester
-    volumes: 'VM01-vol-1'
+    volumes: 'HARVESTER-vol-1'
+  - name: VM02-CouchDB-1
+    volumes: 'DB-vol-1'
+  - name: VM03-CouchDB-2
+    volumes: 'DB-vol-2'
+  # - name: VM04-CouchDB-3
+  #   volumes: 'DB-vol-3'
 
 # NeCTAR Ubuntu 20.04 LTS (Focal) amd64
 instance_image: f8b79936-6616-4a22-b55d-0d0a1d27bceb
 instance_key_name: MRC_SSH_Nic
-instance_flavor: uom.mse.2c9g
+instance_flavor: uom.mse.1c4g

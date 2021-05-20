@@ -1,4 +1,5 @@
-- hosts: localhost
+- name: Deploy MRC instances
+  hosts: localhost
   vars:
     ansible_python_interpreter: auto
   vars_files:
@@ -10,3 +11,9 @@
     - role: openstack-volume
     - role: openstack-security-group
     - role: openstack-instance
+
+- name: DEBUG - remove instances
+  hosts: localhost
+
+  roles:
+    - role: debug-rm-instance

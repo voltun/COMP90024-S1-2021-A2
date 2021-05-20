@@ -1,0 +1,30 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:aurin="http://aurin.org.au" xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" targetNamespace="http://aurin.org.au">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://openapi.aurin.org.au//schemas/gml/3.1.1/base/gml.xsd"/>
+  <xsd:complexType name="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006Type">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="state_code" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="cd_code06" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="sla_code" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="sla_name" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="lga_code" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="lga_name" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="usual_resial_pop_for_15_64_yr_olds" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_1" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_2" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_3" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_4" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_5" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_6" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_7" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_8" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_9" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="grp_10" nillable="true" type="xsd:float"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="wkb_geometry" nillable="true" type="gml:MultiSurfacePropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006" substitutionGroup="gml:_Feature" type="aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006Type"/>
+</xsd:schema>

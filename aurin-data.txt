@@ -1,0 +1,390 @@
+<wfs:FeatureCollection xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wfs="http://www.opengis.net/wfs" xmlns:gml="http://www.opengis.net/gml" xmlns:aurin="http://aurin.org.au" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" numberOfFeatures="10" timeStamp="2021-05-20T17:28:03.221Z" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd http://aurin.org.au http://openapi.aurin.org.au//wfs?service=WFS&amp;version=1.1.0&amp;request=DescribeFeatureType&amp;typeName=aurin%3Adatasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006">
+  <gml:boundedBy>
+    <gml:Envelope srsDimension="2" srsName="urn:x-ogc:def:crs:EPSG:4283">
+      <gml:lowerCorner>-33.9222 151.0886</gml:lowerCorner>
+      <gml:upperCorner>-33.9042 151.121</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <gml:featureMembers>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351305">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.918 151.1154</gml:lowerCorner>
+          <gml:upperCorner>-33.9133 151.121</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351305</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>395</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>5.3435116</aurin:grp_1>
+      <aurin:grp_2>10.178117</aurin:grp_2>
+      <aurin:grp_3>12.468193</aurin:grp_3>
+      <aurin:grp_4>4.8346057</aurin:grp_4>
+      <aurin:grp_5>15.521628</aurin:grp_5>
+      <aurin:grp_6>4.8346057</aurin:grp_6>
+      <aurin:grp_7>20.610687</aurin:grp_7>
+      <aurin:grp_8>10.4325695</aurin:grp_8>
+      <aurin:grp_9>9.414759</aurin:grp_9>
+      <aurin:grp_10>6.3613234</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.918 151.1174 -33.9178 151.1169 -33.9174 151.1165 -33.9169 151.1158 -33.9165 151.1164 -33.9161 151.1168 -33.9159 151.1171 -33.9158 151.1173 -33.9157 151.1172 -33.915 151.1163 -33.9145 151.1158 -33.9137 151.1154 -33.9135 151.116 -33.9135 151.1162 -33.9135 151.1164 -33.9134 151.1167 -33.9134 151.1169 -33.9134 151.117 -33.9134 151.1171 -33.9133 151.1171 -33.9136 151.1174 -33.9141 151.118 -33.9144 151.1186 -33.9146 151.1192 -33.9147 151.1198 -33.9147 151.1206 -33.9147 151.1208 -33.9147 151.121 -33.9147 151.1209 -33.9147 151.1208 -33.9148 151.1208 -33.9149 151.1207 -33.9149 151.1207 -33.915 151.1206 -33.9153 151.1203 -33.9156 151.1203 -33.9162 151.1201 -33.9164 151.1199 -33.9165 151.1198 -33.9172 151.119 -33.9176 151.1185 -33.9177 151.1183 -33.9177 151.1182 -33.9177 151.1181 -33.9178 151.1175 -33.918 151.1174</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351308">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9137 151.1067</gml:lowerCorner>
+          <gml:upperCorner>-33.9108 151.1108</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351308</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>522</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>12.716763</aurin:grp_1>
+      <aurin:grp_2>11.560694</aurin:grp_2>
+      <aurin:grp_3>12.524085</aurin:grp_3>
+      <aurin:grp_4>5.3949904</aurin:grp_4>
+      <aurin:grp_5>16.18497</aurin:grp_5>
+      <aurin:grp_6>4.0462427</aurin:grp_6>
+      <aurin:grp_7>9.633911</aurin:grp_7>
+      <aurin:grp_8>8.477842</aurin:grp_8>
+      <aurin:grp_9>15.606936</aurin:grp_9>
+      <aurin:grp_10>3.8535645</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.912 151.1067 -33.9116 151.1078 -33.9112 151.1089 -33.9108 151.1098 -33.9124 151.1108 -33.9128 151.1098 -33.9133 151.1087 -33.9137 151.1077 -33.912 151.1067</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351309">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.91 151.1059</gml:lowerCorner>
+          <gml:upperCorner>-33.9042 151.1156</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351309</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>615</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>8.116883</aurin:grp_1>
+      <aurin:grp_2>10.38961</aurin:grp_2>
+      <aurin:grp_3>12.337663</aurin:grp_3>
+      <aurin:grp_4>2.922078</aurin:grp_4>
+      <aurin:grp_5>21.59091</aurin:grp_5>
+      <aurin:grp_6>2.7597404</aurin:grp_6>
+      <aurin:grp_7>16.071428</aurin:grp_7>
+      <aurin:grp_8>8.766233</aurin:grp_8>
+      <aurin:grp_9>10.876623</aurin:grp_9>
+      <aurin:grp_10>6.1688313</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.9093 151.1156 -33.9095 151.1156 -33.9096 151.1156 -33.9098 151.1155 -33.91 151.1153 -33.9097 151.1149 -33.9097 151.1148 -33.9094 151.1142 -33.9092 151.1138 -33.9092 151.1135 -33.9091 151.1133 -33.9091 151.1131 -33.909 151.113 -33.909 151.113 -33.909 151.1129 -33.909 151.1127 -33.909 151.1126 -33.909 151.1123 -33.909 151.112 -33.909 151.1118 -33.9091 151.111 -33.9092 151.1102 -33.9089 151.11 -33.908 151.1095 -33.9093 151.1064 -33.9084 151.1059 -33.9076 151.108 -33.9072 151.109 -33.9068 151.1099 -33.9059 151.1094 -33.9049 151.1088 -33.9049 151.1088 -33.9043 151.1104 -33.9043 151.1105 -33.9042 151.1107 -33.9051 151.1111 -33.9061 151.1116 -33.9065 151.1118 -33.9069 151.1121 -33.9072 151.1124 -33.9075 151.113 -33.9084 151.1144 -33.9085 151.1149 -33.9087 151.1152 -33.9089 151.1154 -33.9093 151.1156</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351310">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9103 151.1032</gml:lowerCorner>
+          <gml:upperCorner>-33.9063 151.1102</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351310</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>356</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>7.887324</aurin:grp_1>
+      <aurin:grp_2>8.169014</aurin:grp_2>
+      <aurin:grp_3>9.295774</aurin:grp_3>
+      <aurin:grp_4>6.7605634</aurin:grp_4>
+      <aurin:grp_5>15.774648</aurin:grp_5>
+      <aurin:grp_6>3.6619718</aurin:grp_6>
+      <aurin:grp_7>24.507042</aurin:grp_7>
+      <aurin:grp_8>6.4788733</aurin:grp_8>
+      <aurin:grp_9>12.112676</aurin:grp_9>
+      <aurin:grp_10>5.352113</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.9095 151.1083 -33.9096 151.1078 -33.9097 151.1074 -33.91 151.1057 -33.91 151.1051 -33.9103 151.1036 -33.9101 151.1036 -33.91 151.1036 -33.9094 151.1035 -33.9089 151.1034 -33.9082 151.1032 -33.9081 151.1032 -33.9067 151.1032 -33.9063 151.1037 -33.9084 151.1046 -33.9089 151.1048 -33.9084 151.1059 -33.9093 151.1064 -33.908 151.1095 -33.9089 151.11 -33.9092 151.1102 -33.9092 151.1101 -33.9093 151.1097 -33.9095 151.1083</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351311">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9124 151.1057</gml:lowerCorner>
+          <gml:upperCorner>-33.9093 151.1113</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351311</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>461</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>11.279826</aurin:grp_1>
+      <aurin:grp_2>13.882863</aurin:grp_2>
+      <aurin:grp_3>9.110629</aurin:grp_3>
+      <aurin:grp_4>8.893709</aurin:grp_4>
+      <aurin:grp_5>15.1843815</aurin:grp_5>
+      <aurin:grp_6>3.253796</aurin:grp_6>
+      <aurin:grp_7>13.665943</aurin:grp_7>
+      <aurin:grp_8>6.507592</aurin:grp_8>
+      <aurin:grp_9>12.147506</aurin:grp_9>
+      <aurin:grp_10>6.073753</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.9095 151.1083 -33.9093 151.1097 -33.9096 151.1098 -33.9101 151.1101 -33.9106 151.1104 -33.9107 151.1104 -33.9122 151.1113 -33.9124 151.1108 -33.9108 151.1098 -33.9112 151.1089 -33.9116 151.1078 -33.912 151.1067 -33.9103 151.1058 -33.91 151.1057 -33.9097 151.1074 -33.9096 151.1078 -33.9095 151.1083</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351401">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9168 151.0886</gml:lowerCorner>
+          <gml:upperCorner>-33.9107 151.0973</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351401</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>421</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>10.501193</aurin:grp_1>
+      <aurin:grp_2>10.739857</aurin:grp_2>
+      <aurin:grp_3>11.69451</aurin:grp_3>
+      <aurin:grp_4>5.48926</aurin:grp_4>
+      <aurin:grp_5>14.081145</aurin:grp_5>
+      <aurin:grp_6>4.7732697</aurin:grp_6>
+      <aurin:grp_7>21.479713</aurin:grp_7>
+      <aurin:grp_8>8.114558</aurin:grp_8>
+      <aurin:grp_9>7.875895</aurin:grp_9>
+      <aurin:grp_10>5.2505965</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.9119 151.0914 -33.9125 151.0927 -33.9128 151.0934 -33.913 151.0937 -33.9131 151.094 -33.9133 151.0944 -33.9134 151.0946 -33.9134 151.0948 -33.9135 151.095 -33.9135 151.0952 -33.9135 151.0952 -33.9136 151.0953 -33.9136 151.0954 -33.9136 151.0956 -33.9136 151.0958 -33.9136 151.0959 -33.9135 151.096 -33.9135 151.0962 -33.9135 151.0963 -33.9134 151.0964 -33.9134 151.0965 -33.9133 151.0967 -33.9133 151.0968 -33.9132 151.0969 -33.9131 151.0971 -33.9131 151.0972 -33.913 151.0973 -33.9136 151.0967 -33.9139 151.0964 -33.9141 151.0962 -33.9144 151.096 -33.9147 151.0956 -33.9147 151.0956 -33.915 151.0953 -33.9152 151.0951 -33.9152 151.0951 -33.9155 151.0948 -33.9156 151.0946 -33.9158 151.0943 -33.916 151.0941 -33.9161 151.0938 -33.9162 151.0936 -33.9164 151.0933 -33.9165 151.0931 -33.9165 151.0929 -33.9166 151.0927 -33.9167 151.0925 -33.9167 151.0922 -33.9168 151.0922 -33.9165 151.092 -33.9155 151.0914 -33.9146 151.0909 -33.9138 151.0904 -33.9125 151.0897 -33.9124 151.0896 -33.9111 151.0889 -33.9107 151.0886 -33.9119 151.0914</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351403">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9155 151.0967</gml:lowerCorner>
+          <gml:upperCorner>-33.9103 151.1039</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351403</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>445</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>11.764706</aurin:grp_1>
+      <aurin:grp_2>12.217195</aurin:grp_2>
+      <aurin:grp_3>9.728507</aurin:grp_3>
+      <aurin:grp_4>6.3348417</aurin:grp_4>
+      <aurin:grp_5>20.81448</aurin:grp_5>
+      <aurin:grp_6>4.2986426</aurin:grp_6>
+      <aurin:grp_7>11.538462</aurin:grp_7>
+      <aurin:grp_8>7.918552</aurin:grp_8>
+      <aurin:grp_9>10.859729</aurin:grp_9>
+      <aurin:grp_10>4.524887</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.915 151.099 -33.9151 151.0988 -33.9155 151.0978 -33.9138 151.0968 -33.9136 151.0967 -33.913 151.0973 -33.913 151.0973 -33.9127 151.0976 -33.9125 151.0978 -33.9123 151.098 -33.9121 151.0982 -33.912 151.0983 -33.9119 151.0984 -33.9118 151.0985 -33.9116 151.0987 -33.9115 151.0988 -33.9115 151.0989 -33.9114 151.0991 -33.9113 151.0993 -33.9111 151.0995 -33.9111 151.0996 -33.911 151.0998 -33.911 151.0999 -33.9109 151.1 -33.9109 151.1002 -33.9108 151.1006 -33.9107 151.1009 -33.9107 151.1012 -33.9107 151.1013 -33.9104 151.1027 -33.9103 151.1036 -33.9106 151.1037 -33.9109 151.1038 -33.9119 151.1039 -33.9123 151.1031 -33.9125 151.1025 -33.9134 151.1002 -33.9141 151.0984 -33.915 151.099</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351406">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9167 151.1054</gml:lowerCorner>
+          <gml:upperCorner>-33.9142 151.1092</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351406</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>406</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>5.6650248</aurin:grp_1>
+      <aurin:grp_2>14.53202</aurin:grp_2>
+      <aurin:grp_3>10.344828</aurin:grp_3>
+      <aurin:grp_4>7.142857</aurin:grp_4>
+      <aurin:grp_5>17.73399</aurin:grp_5>
+      <aurin:grp_6>2.4630542</aurin:grp_6>
+      <aurin:grp_7>15.763547</aurin:grp_7>
+      <aurin:grp_8>8.374384</aurin:grp_8>
+      <aurin:grp_9>11.083744</aurin:grp_9>
+      <aurin:grp_10>6.8965516</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.9153 151.1054 -33.915 151.106 -33.9145 151.1074 -33.9142 151.108 -33.9163 151.1092 -33.9165 151.1087 -33.9165 151.1086 -33.9156 151.108 -33.9164 151.1061 -33.9167 151.1054 -33.9153 151.1054</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351409">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.9222 151.0909</gml:lowerCorner>
+          <gml:upperCorner>-33.9141 151.0982</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351409</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>530</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>10.056926</aurin:grp_1>
+      <aurin:grp_2>10.436433</aurin:grp_2>
+      <aurin:grp_3>9.67742</aurin:grp_3>
+      <aurin:grp_4>7.210626</aurin:grp_4>
+      <aurin:grp_5>18.026566</aurin:grp_5>
+      <aurin:grp_6>4.174573</aurin:grp_6>
+      <aurin:grp_7>18.975332</aurin:grp_7>
+      <aurin:grp_8>8.349146</aurin:grp_8>
+      <aurin:grp_9>7.7798862</aurin:grp_9>
+      <aurin:grp_10>5.313093</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.9188 151.0929 -33.9184 151.0926 -33.9187 151.092 -33.9173 151.0912 -33.917 151.0909 -33.9169 151.0911 -33.9169 151.0917 -33.9168 151.0919 -33.9168 151.0922 -33.9167 151.0922 -33.9167 151.0925 -33.9166 151.0927 -33.9165 151.0929 -33.9165 151.0931 -33.9164 151.0933 -33.9162 151.0936 -33.9161 151.0938 -33.916 151.0941 -33.9158 151.0943 -33.9156 151.0946 -33.9155 151.0948 -33.9152 151.0951 -33.9152 151.0951 -33.915 151.0953 -33.9147 151.0956 -33.9147 151.0956 -33.9144 151.096 -33.9141 151.0962 -33.9143 151.0963 -33.9162 151.0975 -33.9163 151.0974 -33.9169 151.096 -33.9173 151.0962 -33.9187 151.097 -33.9208 151.0982 -33.9212 151.0973 -33.9216 151.0964 -33.9222 151.0949 -33.9218 151.0946 -33.9214 151.0944 -33.9205 151.0939 -33.9203 151.0938 -33.9197 151.0934 -33.9188 151.0929</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+    <aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006 gml:id="datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006.1351411">
+      <gml:boundedBy>
+        <gml:Envelope srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:lowerCorner>-33.915 151.0984</gml:lowerCorner>
+          <gml:upperCorner>-33.9119 151.1041</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <aurin:state_code>1</aurin:state_code>
+      <aurin:cd_code06>1351411</aurin:cd_code06>
+      <aurin:sla_code>105201550</aurin:sla_code>
+      <aurin:sla_name>Canterbury (C)</aurin:sla_name>
+      <aurin:lga_code>11550</aurin:lga_code>
+      <aurin:lga_name>Canterbury (C)</aurin:lga_name>
+      <aurin:usual_resial_pop_for_15_64_yr_olds>337</aurin:usual_resial_pop_for_15_64_yr_olds>
+      <aurin:grp_1>5.3892217</aurin:grp_1>
+      <aurin:grp_2>11.676647</aurin:grp_2>
+      <aurin:grp_3>14.97006</aurin:grp_3>
+      <aurin:grp_4>6.5868263</aurin:grp_4>
+      <aurin:grp_5>13.173653</aurin:grp_5>
+      <aurin:grp_6>4.1916165</aurin:grp_6>
+      <aurin:grp_7>16.467066</aurin:grp_7>
+      <aurin:grp_8>6.5868263</aurin:grp_8>
+      <aurin:grp_9>13.772455</aurin:grp_9>
+      <aurin:grp_10>7.185629</aurin:grp_10>
+      <aurin:wkb_geometry>
+        <gml:MultiSurface srsName="urn:x-ogc:def:crs:EPSG:4283" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon>
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-33.915 151.099 -33.9141 151.0984 -33.9134 151.1002 -33.9125 151.1025 -33.9123 151.1031 -33.9119 151.1039 -33.912 151.104 -33.9131 151.1041 -33.9132 151.1036 -33.9137 151.1025 -33.9147 151.1 -33.915 151.0992 -33.915 151.099</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </aurin:wkb_geometry>
+    </aurin:datasource-ACT_Govt_CMTEDD-UoM_AURIN_DB_seifi_irsd_10_groups_2006>
+  </gml:featureMembers>
+</wfs:FeatureCollection>
