@@ -3,6 +3,8 @@ import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-load
 import "../css/map.css";
 import fetchFakeMapData from "../api/fetchFakeMapData";
 
+
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoibml0aGlua25qYWluIiwiYSI6ImNrb2xjaDlnZTA0NmUyb3F0NWZjZnp0ZzYifQ.TGtgvNrOO3DnuNwmdXeWvA';
 
 export default function CustomMapComponent(props) {
@@ -23,9 +25,9 @@ export default function CustomMapComponent(props) {
         // add navigation control (zoom buttons)
         map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
 
-        map.on("load", async () => {
-            const results = await fetchFakeMapData({ longitude: lng, latitude: lat });
-            console.log(results)
+        map.on("load", async (input, init) => {
+            // const results = await fetchMapData({ longitude: lng, latitude: lat });
+            const results = await fetchFakeMapData({longitude: lng, latitude: lat })
             map.addSource("random-points-data", {
                 type: "geojson",
                 data: results

@@ -13,15 +13,24 @@ function App() {
   let { horizontalBarData, optionsLocal } = fetchFakeBarChartData(labels, data);
   let [options, setOptions] = useState(optionsLocal);
   let [flipOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Vertical Bar Chart' } } } });
+  const [data1, setData1] = React.useState(null);
+  React.useEffect(() => {
+    fetch("/db")
+        .then((res) => res.json())
+        .then((data1) => setData1(data1._id));
+  }, []);
+
   return (
     <div className="App">
       <div className="row">
         <div className="map-div-container box">
           <CustomMapComponent funcToChange={{ "optionsFunc": setOptions, "dataFunc": setData }} />
+          <p>{!data1 ? "Loading..." : data1}</p>
         </div>
         <div className="chart-div-container box">
           <HorizontalBarChart data={horizontalBarData} options={flipOptions} />
         </div>
+
       </div>
       <div className="row">
         <div className="chart-div-container box">

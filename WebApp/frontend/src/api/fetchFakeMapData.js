@@ -5,6 +5,8 @@
  * @property {number} latitude - latitude coordinate
  */
 
+import {COUCHDB} from "../constants";
+
 /**
  * Generates a GeoJSON FeatureCollection of random points based on
  * the center coordinates passed in.
@@ -24,6 +26,7 @@ const fetchFakeMapData = centerCoordinates => {
     const longitude = centerLon + r * Math.sin(theta);
     return { longitude, latitude };
   };
+
   const newFeaturesList = [];
   for (let i = 0; i < 10; i++) {
     const id = i;
