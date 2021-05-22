@@ -22,7 +22,7 @@ class MyStreamListener(tweepy.StreamListener):
     def __init__(self,api=None):
         super(MyStreamListener,self).__init__()
         self.num_tweets=0
-        self.file=open("tweet.txt","w")
+        self.file=open("tweetStream.txt","w")
     def on_status(self,status):
         tweet=status._json
         self.file.write(json.dumps(tweet)+ '\n')
@@ -38,15 +38,5 @@ class MyStreamListener(tweepy.StreamListener):
 l = MyStreamListener()
 stream = tweepy.Stream(auth,l)
 #this line filters twiiter streams to capture data by keywords
-stream.filter(track=['covid','corona','covid19','coronavirus',
-'facemask','sanitizer','social-distancing'])
-
-tweets_data_path='tweet.txt'
-tweets_data=[]
-tweets_file=open(tweets_data_path,"r")
-#read in tweets and store on list
-for line in tweets_file:
-    tweet=json.loads(line)
-    tweets_data.append(tweet)
-tweets_file.close()
-print(tweets_data[0])
+australia = [113.338953078, -43.6345972634, 153.569469029, -10.6681857235]
+stream.filter(locations=australia)
