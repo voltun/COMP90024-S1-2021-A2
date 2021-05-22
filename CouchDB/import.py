@@ -14,11 +14,12 @@ else:
     db = couchserver.create(dbname)
 
 # Open file
-file1 = open('TwitterData.txt', 'r')
+file1 = open('TweetSearch.txt', 'r')
 
 # Import each line of file to couchdb/twitter
 for line in file1:
     doc = json.loads(line)
-    docid = str(doc['id'])
-    db[docid] = docc
+    doc["_id"] = str(doc["id"])
+    del doc["id"]
+    db.update([doc])
 
