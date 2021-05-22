@@ -25,9 +25,10 @@ class MyStreamListener(tweepy.StreamListener):
         self.file=open("tweetStream.txt","w")
     def on_status(self,status):
         tweet=status._json
-        self.file.write(json.dumps(tweet)+ '\n')
-        tweet_list.append(status)
-        self.num_tweets+=1
+        if status.coordinates != None:
+            self.file.write(json.dumps(tweet)+ '\n')
+            tweet_list.append(status)
+            self.num_tweets+=1
         if self.num_tweets<1000:
             return True
         else:
