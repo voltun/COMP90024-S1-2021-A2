@@ -1,0 +1,53 @@
+---
+# Upgrade apt packages
+- name: Update apt-get cache
+  become: yes
+  apt:
+    update_cache: yes
+    force_apt_get: yes
+# sudo apt-get update 
+
+- name: Upgrade all apt packages
+  become: yes
+  apt:
+    upgrade: dist
+    force_apt_get: yes
+# sudo apt-get upgrade
+
+# Install dependencies on the host
+- name: Install pip
+  become: yes
+  apt:
+    name: ['python3-pip']
+    state: present
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"
+# sudo apt-get update; sudo apt-get install python-pip
+
+- name: Update pip
+  pip:
+    name: ['pip']
+    state: present
+# pip install --upgrade pip
+
+- name: Install openstacksdk
+  pip:
+    name: ['openstacksdk==0.52']
+    state: present
+# pip install openstacksdk
+
+# Check if reboot needed
+- name: Check if a reboot is needed
+  register: reboot_required_file
+  stat: path=/var/run/reboot-required get_md5=no
+
+# Reboot instance if needed
+- name: Reboot the Debian or Ubuntu server
+  reboot:
+    msg: "Reboot initiated by Ansible due to kernel updates"
+    connect_timeout: 5
+    reboot_timeout: 300
+    pre_reboot_delay: 0
+    post_reboot_delay: 30
+    test_command: uptime
+  when: reboot_required_file.stat.exists

@@ -4,7 +4,7 @@
   vars_files: "host_vars/mrc.yaml"
 
   roles:
-    - role: openstack-common
+    # - role: openstack-common
     - role: openstack-volume
     - role: openstack-security-group
     - role: openstack-instance
@@ -16,15 +16,30 @@
   roles:
     - role: instance-connection
 
-# Setup VM instances based on usage
-- name: Configure VM instances
-  hosts: mrc_ssh
-  become: yes
+# Setup and configure CouchDB instances
+- name: Configure CouchDB instances
+  hosts: dbservers
+
+  roles:
+    - role: instance-internet-access
+    - role: openstack-common
+    - role: db-setup
+
+# Setup and configure Harvester instances
+- name: Configure Harvester instances
+  hosts: harvesters
 
   roles:
     - role: instance-internet-access
     - role: openstack-common
 
+# Setup and configure Web server instances
+- name: Configure WebApp server instances
+  hosts: webservers
+
+  roles:
+    - role: instance-internet-access
+    - role: openstack-common
 
 # TODO run VM scripts
 
