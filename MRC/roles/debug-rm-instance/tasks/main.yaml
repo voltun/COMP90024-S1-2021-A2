@@ -11,7 +11,7 @@
 # Remove deployed volumes
 - name: Removing volumes
   os_volume:
-    display_name: '{{ item.display_name }}'
+    display_name: '{{ item.volume.display_name }}'
     wait: yes
     timeout: 30
     state: absent
@@ -23,4 +23,7 @@
     name: '{{ item }}'
     state: absent
   loop: '{{ sg_names }}'
+
+- debug:
+    msg: "DEBUG: ALL CREATED OBJECTS REMOVED."
 

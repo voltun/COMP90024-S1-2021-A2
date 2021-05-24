@@ -5,16 +5,16 @@ availability_zone: melbourne-qh2-uom
 volumes:
   - vol_name: HARVESTER-vol-1
     vol_size: 100
-    vol_desc: 'Volume for Tweeter/AURIN Harvester'
+    vol_desc: 'Volume for Twitter/AURIN Harvester'
   - vol_name: DB-vol-1
     vol_size: 100
     vol_desc: 'Volume for CouchDB Cluster #1'
-  - vol_name: DB-vol-2
-    vol_size: 100
-    vol_desc: 'Volume for CouchDB Cluster #2'
-  - vol_name: DB-vol-3
-    vol_size: 100
-    vol_desc: 'Volume for CouchDB Cluster #3'
+  # - vol_name: DB-vol-2
+  #   vol_size: 100
+  #   vol_desc: 'Volume for CouchDB Cluster #2'
+  # - vol_name: WA-vol-1
+  #   vol_size: 100
+  #   vol_desc: 'Volume for WebApp Server hosting'
 
 # Security group
 security_groups:
@@ -37,10 +37,12 @@ instances:
     volumes: 'HARVESTER-vol-1'
   - name: VM02-CouchDB-1
     volumes: 'DB-vol-1'
-  - name: VM03-CouchDB-2
-    volumes: 'DB-vol-2'
-  # - name: VM04-CouchDB-3
-  #   volumes: 'DB-vol-3'
+  # - name: VM03-CouchDB-2
+  #   volumes: 'DB-vol-2'
+  # - name: VM04-WebApp-Server
+  #   volumes: 'WA-vol-1'
+
+# TODO Separate harvesters/ db/ webapp instances into groups
 
 # NeCTAR Ubuntu 20.04 LTS (Focal) amd64
 instance_image: f8b79936-6616-4a22-b55d-0d0a1d27bceb

@@ -1,6 +1,7 @@
 from _settings import CFG_AURIN, AURIN_TITLE_FILE, AURIN_DATA_FILE,\
-AURIN_FEATURE_FILE
+AURIN_FEATURE_FILE, CONS_SEP
 from lxml import etree
+import xmltodict, json
 import urllib.request as urllib2
 
 URL_CAPABILITY = 'http://openapi.aurin.org.au/csw?request=GetCapabilities&service=CSW'
@@ -96,7 +97,7 @@ class AurinHandler:
         """
         
         url = URL_DESC_DATASET + dataset
-        print('================ DATASET PROPERTIES ================')
+        print("="*CONS_SEP+" FETCHING DATASET ATTRIBUTES "+"="*CONS_SEP)
         print('Query URL: '+url)
         xml = self.__openapi_request(url)
         root = etree.fromstring(xml)
@@ -107,7 +108,7 @@ class AurinHandler:
             outfile.write(etree.tostring(root, pretty_print=True).decode())
                 # print('Dataset: '+dataset.find(".//dc:title", root.nsmap).text)
                 # print(dataset.find(".//dc:rights", root.nsmap).text)
-            print("Dataset properties written to " + AURIN_FEATURE_FILE)
+            print("Dataset properties written to " + AURIN_FEATURE_FILE + "\n\n")
 
 
     def queryDataset(self, dataset:str, max_rows=None):
@@ -125,15 +126,20 @@ class AurinHandler:
             url = URL_FETCH_DATA + dataset        
         else:
             url = URL_FETCH_DATA + dataset + "&MaxFeatures=" + str(max_rows)
+        
+        print("="*CONS_SEP+" FETCHING DATA FROM AURIN "+"="*CONS_SEP)
         print('Query URL: '+url)
         xml = self.__openapi_request(url)
-        root = etree.fromstring(xml)
+        # Convert xml structured AURIN data string into JSON string
+        aurin_dict = xmltodict.parse(xml)
+        aurin_json = json.dumps(aurin_dict, indent=4)
+        # root = etree.fromstring(xml)
         # print(etree.tostring(root, pretty_print=True).decode())
 
         # Write dataset output to specified file
         with open(AURIN_DATA_FILE, 'w') as outfile:
-            outfile.write(etree.tostring(root, pretty_print=True).decode())
+            outfile.write(aurin_json)
                 # print('Dataset: '+dataset.find(".//dc:title", root.nsmap).text)
                 # print(dataset.find(".//dc:rights", root.nsmap).text)
-            print("Rows of data written to " + AURIN_DATA_FILE)
+            print("Rows of data written to " + AURIN_DATA_FILE + "\n\n")
 

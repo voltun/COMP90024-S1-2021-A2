@@ -1,10 +1,7 @@
+# Provision VM instance(s) on MRC
 - name: Deploy MRC instances
   hosts: localhost
-  vars:
-    ansible_python_interpreter: auto
-  vars_files:
-    - host_vars/mrc.yaml
-  gather_facts: true
+  vars_files: "host_vars/mrc.yaml"
 
   roles:
     - role: openstack-common
@@ -12,8 +9,27 @@
     - role: openstack-security-group
     - role: openstack-instance
 
-- name: DEBUG - remove instances
+# Open SSH into the provisioned VM(s)
+- name: Open SSH connecton into VM(s)
   hosts: localhost
 
   roles:
-    - role: debug-rm-instance
+    - role: instance-connection
+
+# Setup VM instances based on usage
+- name: Configure VM instances
+  hosts: mrc_ssh
+  become: yes
+
+  roles:
+    - role: instance-internet-access
+    - role: openstack-common
+
+
+# TODO run VM scripts
+
+# - name: DEBUG - remove instances
+#   hosts: localhost
+
+#   roles:
+#     - role: debug-rm-instance

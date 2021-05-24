@@ -1,0 +1,6 @@
+---
+# Obtain internet access in MRC instances
+- name: Append proxy data to /etc/environment
+  blockinfile:
+    block: "{{ lookup('file', 'proxy_data') }}"
+    path: /etc/environment
