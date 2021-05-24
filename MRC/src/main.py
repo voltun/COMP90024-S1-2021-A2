@@ -1,6 +1,9 @@
 from _settings import CFG_FILENAME
 import configparser, os
 import aurin_handler
+from twitterSearch import twitterSearch
+from twitterStream import *
+from uploadToDB import uploadToDB
 
 TEST_RECORDS = "5000"
 
@@ -10,10 +13,10 @@ def main():
     config = initConfig()
     aurin = aurin_handler.AurinHandler(config)
     aurin.getDatasetTitle(TEST_RECORDS)
-    
-
-
-
+    twitterSearch(config)
+    twitterStream(config)
+    uploadToDB("tweetSearch.txt")
+    uploadToDB("tweetStream.txt")
 
 # Initialize the config file for storing authentication credentials
 def initConfig():
