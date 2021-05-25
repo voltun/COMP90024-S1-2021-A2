@@ -36,13 +36,8 @@
   register: webapp_instance
 
 # Change facts if WebApp created
-- name: Setup facts for os_instance
+- name: Update facts
   set_fact:
     os_instance: '{{ webapp_instance }}'
   when: webapp_instance.changed
 
-- name: Debug mode
-  debug:
-    msg: "Instance {{ item.openstack.name }} has been created. IP address is {{ item.openstack.public_v4 }}"
-  loop: '{{ os_instance.results }}'
-  when: item.openstack is defined

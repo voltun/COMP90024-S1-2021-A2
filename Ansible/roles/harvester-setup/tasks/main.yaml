@@ -1,0 +1,24 @@
+---
+# Install dependencies for harvesters
+- name: Install harvester python dependencies
+  pip:
+    name: ['tweepy', 'lxml', 'xmltodict', 'couchdb']
+    state: present
+
+# # Set python environment path
+# - name: Set Python path
+#   shell: export PATH="$PATH:/usr/local/bin/python"
+
+- name: Clone git repo
+  git:
+    repo: https://github.com/voltun/COMP90024-S1-2021-A2.git
+    dest: /github
+    update: yes
+
+# # Copy credentials from local to remote
+# - name: Resolving credentials for git
+#   become: yes
+#   copy:
+#     src: ~/auth.cfg
+#     dest: /github/MRC/auth.cfg
+#     mode: 0644

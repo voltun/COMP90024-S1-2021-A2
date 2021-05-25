@@ -1,0 +1,5 @@
+---
+# Run the scripts!
+- name: Run Harvester scripts
+  shell:
+    python3 /github/MRC/src/main.py
