@@ -3,12 +3,9 @@ import './css/App.css';
 import React, { useState } from 'react';
 import CustomMapComponent from "./components/CustomMapComponent";
 import HorizontalBarChart from "./components/HorizontalBarChart";
-
-import DoughnutChart from "./components/DoughnutChart";
-import LineChart from "./components/LineChart";
 import { fetchFakeBarChartData } from "./api/fetchFakeMapData";
-import {Pie, Scatter} from 'react-chartjs-2';
-import ScatterChart from "./components/Scatter";
+import {Pie} from 'react-chartjs-2';
+
 
 function App() {
 
@@ -43,11 +40,6 @@ function App() {
   },[]);
 
 
-
-
-
-
-
   //Get vertical date from database
 
 
@@ -58,56 +50,39 @@ function App() {
   //Get horizontal data
   let { horizontalBarData, optionsLocal } = fetchFakeBarChartData(labels, data);
   let [options, setOptions] = useState(optionsLocal);
-  let [flipOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'People aged between 18-40' } } } });
+  let [flipOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Peolple aged between 18 and 60' } } } });
 
-
-
-  //Get data from backend(server.js) example
-  // const [data1, setData1] = React.useState(null);
-  // React.useEffect(() => {
-  //   fetch("/db")
-  //       .then((res) => res.json())
-  //       .then((data1) => setData1(data1._id));
-  // }, []);
 
   return (
-    <div className="App">
-      <div className="row">
-        <div className="chart-div-container box">
-          <Pie data={tweets} options={{ maintainAspectRatio: false ,animation:false, }}/>
+      <div className="App">
+        <div className="row">
+          <div className="chart-div-container box">
+            <Pie data={tweets} options={{ maintainAspectRatio: false ,animation:false, }}/>
+
+          </div>
+          <div className="chart-div-container box">
+            <Pie data={population} options={{ maintainAspectRatio: false ,animation:false, legend: { display: true, position: "right" },datalabels: {
+                display: true,
+                color: "black",
+              }}}/>
+          </div>
 
         </div>
-        <div className="map-div-container box">
-          <CustomMapComponent funcToChange={{ "optionsFunc": setOptions, "dataFunc": setData }} />
+
+
+        {/*row 2*/}
+        <div className="row">
+          <div className="map-div-container box">
+            <CustomMapComponent funcToChange={{ "optionsFunc": setOptions, "dataFunc": setData }} />
+          </div>
+          <div className="chart-div-container box">
+            <HorizontalBarChart data={age} options={flipOptions} />
+          </div>
+
         </div>
 
 
       </div>
-
-
-
-
-      {/*row 2*/}
-      <div className="row">
-        <div className="chart-div-container box">
-          <Pie data={population} options={{ maintainAspectRatio: false ,animation:false}}/>
-        </div>
-        <div className="chart-div-container box">
-          <HorizontalBarChart data={age} options={flipOptions} />
-        </div>
-
-      </div>
-
-      {/*/!*row 3*!/*/}
-      {/*<div className="row">*/}
-      {/*  <div className="chart-div-container box">*/}
-      {/*    <HorizontalBarChart data={horizontalBarData} options={options} />*/}
-      {/*  </div>*/}
-      {/*  <div className="chart-div-container box">*/}
-      {/*    <LineChart data={horizontalBarData} />*/}
-      {/*  </div>*/}
-      {/*</div>*/}
-    </div>
   );
 }
 
