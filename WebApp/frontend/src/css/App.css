@@ -23,6 +23,12 @@ body {
   margin: 20px;
 }
 
+.pie-div-container {
+  background: white;
+  width: 50%;
+  margin: 20px;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -7,6 +7,7 @@ const HorizontalBarChart = (props) => (
       <h4 className='title'>Horizontal Bar Chart</h4>
     </div> */}
     <Bar data={props.data} options={props.options} />
+
   </>
 );
 

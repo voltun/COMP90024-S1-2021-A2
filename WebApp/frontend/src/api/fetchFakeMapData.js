@@ -5,7 +5,6 @@
  * @property {number} latitude - latitude coordinate
  */
 
-import {COUCHDB} from "../constants";
 
 /**
  * Generates a GeoJSON FeatureCollection of random points based on
@@ -13,44 +12,75 @@ import {COUCHDB} from "../constants";
  * @param {CoordinatePair} centerCoordinates - the {@link CoordinatePair} for the map center
  * @return {results} GeoJSON FeatureCollection
  */
-const fetchFakeMapData = centerCoordinates => {
+const fetchMapData = centerCoordinates => {
   /**
-  * Generates a random point within 0.025 radius of map center coordinates.
-  * @param {CoordinatePair} centerCoordinates - the {@link CoordinatePair} for the map center
-  * @return {CoordinatePair} randomly generated coordinate pair
-  */
-  const getRandomCoordinate = ({ longitude: centerLon, latitude: centerLat }) => {
-    const r = 10 * Math.sqrt(Math.random());
-    const theta = Math.random() * 2 * Math.pow(Math.PI, 6);
-    const latitude = centerLat + r * Math.cos(theta);
-    const longitude = centerLon + r * Math.sin(theta);
-    return { longitude, latitude };
-  };
+   * Generates a random point within 0.025 radius of map center coordinates.
+   * @param {CoordinatePair} centerCoordinates - the {@link CoordinatePair} for the map center
+   * @return {CoordinatePair} randomly generated coordinate pair
+   */
+  // const getRandomCoordinate = ({ longitude: centerLon, latitude: centerLat }) => {
+  //   // const r = 10 * Math.sqrt(Math.random());
+  //   // const theta = Math.random() * 2 * Math.pow(Math.PI, 6);
+  //   // const latitude = centerLat + r * Math.cos(theta);
+  //   // const longitude = centerLon + r * Math.sin(theta);
+  //   // return { longitude, latitude };
+  // };
 
   const newFeaturesList = [];
-  for (let i = 0; i < 10; i++) {
-    const id = i;
-    const { longitude, latitude } = getRandomCoordinate(centerCoordinates);
-    newFeaturesList.push({
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [longitude, latitude]
-      },
-      properties: {
-        id,
-        title: `Random Point #${id}`,
-        description: `description for Random Point #${id}`,
-        icon: `fire-station-15`
-      }
-    });
-  }
+  let citiesList=[];
+  let citiesName=["Melbourne","Sydney","Brisbane","Gold Coast"];
+
+
+    let melbourne={};
+    melbourne.longitude=144.9631 ;
+    melbourne.latitude=-37.8136;
+    citiesList.push(melbourne);
+    let sydney={};
+    sydney.longitude=151.2093;
+    sydney.latitude=-33.8688;
+    citiesList.push(sydney);
+    let brisbane={};
+    brisbane.longitude=153.0260;
+    brisbane.latitude=-27.4705;
+    citiesList.push(brisbane);
+    let goldcoast={};
+    goldcoast.longitude=153.4000;
+    goldcoast.latitude=-28.0167;
+    citiesList.push(goldcoast);
+
+
+
+    let arrayLength = citiesList.length;
+    for(let index = 0; index < arrayLength; index++){
+      let longitude=citiesList[index].longitude;
+      let latitude=citiesList[index].latitude;
+      newFeaturesList.push({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [longitude, latitude]
+        },
+        properties: {
+          index,
+          title: `Random Point #${index}`,
+          description: `${citiesName[index]}`,
+          icon: `fire-station-15`
+        }
+      });
+
+    }
+
+    console.log(newFeaturesList);
+
+
 
   return Promise.resolve({
     type: "FeatureCollection",
     features: newFeaturesList
   });
 };
+
+
 
 const fetchFakeBarChartData = (labels, data) => {
   return {
@@ -102,7 +132,7 @@ const fetchFakeBarChartData = (labels, data) => {
   };
 }
 
-export default fetchFakeMapData;
+export default fetchMapData;
 
 export {
   fetchFakeBarChartData

@@ -29,12 +29,8 @@ const data = {
 };
 
 const DoughnutChart = () => (
-  <>
-    {/* <div className='header'>
-      <h4 className='title'>Doughnut Chart</h4>
-    </div> */}
     <Doughnut data={data} />
-  </>
+
 );
 
 export default DoughnutChart;

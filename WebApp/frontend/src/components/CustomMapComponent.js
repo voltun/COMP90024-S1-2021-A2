@@ -3,8 +3,6 @@ import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-load
 import "../css/map.css";
 import fetchFakeMapData from "../api/fetchFakeMapData";
 
-
-
 mapboxgl.accessToken = 'pk.eyJ1Ijoibml0aGlua25qYWluIiwiYSI6ImNrb2xjaDlnZTA0NmUyb3F0NWZjZnp0ZzYifQ.TGtgvNrOO3DnuNwmdXeWvA';
 
 export default function CustomMapComponent(props) {
@@ -17,21 +15,30 @@ export default function CustomMapComponent(props) {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
             // See style options here: https://docs.mapbox.com/api/maps/#styles
-            style: "mapbox://styles/mapbox/streets-v11",
+            style: "mapbox://styles/mapbox/light-v10",
             center: [lng, lat],
             zoom: zoom
         });
 
+
         // add navigation control (zoom buttons)
         map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+        // map.addControl(new mapboxgl.FullscreenControl({container: mapContainerRef.current.querySelector('body')}));
 
         map.on("load", async (input, init) => {
             // const results = await fetchMapData({ longitude: lng, latitude: lat });
             const results = await fetchFakeMapData({longitude: lng, latitude: lat })
+            console.log(results);
             map.addSource("random-points-data", {
                 type: "geojson",
                 data: results
             });
+            map.addSource('urban-areas', {
+                'type': 'geojson',
+                'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
+            });
+
+
             map.addLayer({
                 'id': 'random-points-data',
                 'type': 'symbol',
@@ -41,11 +48,41 @@ export default function CustomMapComponent(props) {
                     'icon-allow-overlap': false
                 }
             });
+
+
+            map.addLayer(
+                {
+                    'id': 'urban-areas-fill',
+                    'type': 'fill',
+                    'source': 'urban-areas',
+                    'layout': {},
+                    'paint': {
+                        'fill-color': '#f08',
+                        'fill-opacity': 0.4
+                    }
+// This is the important part of this example: the addLayer
+// method takes 2 arguments: the layer as an object, and a string
+// representing another layer's name. if the other layer
+// exists in the stylesheet already, the new layer will be positioned
+// right before that layer in the stack, making it possible to put
+// 'overlays' anywhere in the layer stack.
+// Insert the layer beneath the first symbol layer.
+                },
+                // firstSymbolId
+            );
+
+
+
+
             map.on('click', 'random-points-data', function (e) {
-                // console.log(props);
+                console.log("***")
+                console.log(props);
                 props.funcToChange.dataFunc([...Array(6)].map(e => parseInt(Math.random() * 100) | 0));
+
                 var coordinates = e.features[0].geometry.coordinates.slice();
                 var description = e.features[0].properties.description;
+
+
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
                 // over the copy being pointed to.
