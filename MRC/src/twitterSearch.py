@@ -24,4 +24,4 @@ def twitterSearch(config):
     file=open("tweetSearch.txt","w")
     for tweet in tweets:
         if tweet.coordinates != None:
-            file.write(json.dumps(tweet)+'\n')
+            file.write(json.dumps(tweet._json)+'\n')
