@@ -32,6 +32,7 @@
   roles:
     - role: instance-internet-access
     - role: openstack-common
+    - role: harvester-setup
 
 # Setup and configure Web server instances
 - name: Configure WebApp server instances
@@ -40,8 +41,16 @@
   roles:
     - role: instance-internet-access
     - role: openstack-common
+    - role: webapp-setup
 
-# TODO run VM scripts
+# TODO start couchdb
+
+# Start Harvester
+- name: Start Harvester(s) 
+  hosts: harvesters
+
+  roles:
+    - role: harvester-start
 
 # - name: DEBUG - remove instances
 #   hosts: localhost

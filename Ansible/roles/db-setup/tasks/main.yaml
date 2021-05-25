@@ -7,4 +7,54 @@
     state: present
   when: ansible_distribution == "Ubuntu"
 
+# Install CouchDB dependencies
+- name: Install CouchDB dependencies
+  become: yes
+  apt:
+    name: ['curl', 'apt-transport-https', 'gnupg', 'build-essential',
+      'pkg-config', 'coreutils', 'erlang', 'libicu-dev', 'libcurl4-openssl-dev']
+    state: present
+    install_recommends: no
+
+# Setup CouchDB installation
+- name: Obtain CouchDB GPG key
+  shell: curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add
+  args:
+    warn: no
+
+- name: Enable CouchDB Apache package repo
+  shell: 'echo "deb https://apache.bintray.com/couchdb-deb focal main" |
+  sudo tee -a /etc/apt/sources.list'
+
+# Check if reboot needed
+- name: Check if a reboot is needed
+  register: reboot_required_file
+  stat: path=/var/run/reboot-required get_md5=no
+
+# Reboot instance if needed
+- name: Reboot instance
+  reboot:
+    msg: "Reboot initiated by Ansible due to kernel updates"
+    connect_timeout: 5
+    reboot_timeout: 300
+    pre_reboot_delay: 0
+    post_reboot_delay: 30
+    test_command: uptime
+  when: reboot_required_file.stat.exists
+  
 # Install CouchDB
+- name: Install CouchDB
+  become: yes
+  apt:
+    name: ['couchdb']
+    force_apt_get: yes
+    state: present
+# sudo apt-get install couchdb
+
+# Upgrade apt packages
+- name: Update apt-get cache
+  become: yes
+  apt:
+    update_cache: yes
+    force_apt_get: yes
+# sudo apt-get update

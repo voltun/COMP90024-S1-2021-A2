@@ -1,10 +1,8 @@
 ---
 # Upgrade apt packages
-- name: Update apt-get cache
-  become: yes
+- name: Update apt list
   apt:
     update_cache: yes
-    force_apt_get: yes
 # sudo apt-get update 
 
 - name: Upgrade all apt packages
@@ -42,7 +40,7 @@
   stat: path=/var/run/reboot-required get_md5=no
 
 # Reboot instance if needed
-- name: Reboot the Debian or Ubuntu server
+- name: Reboot instance
   reboot:
     msg: "Reboot initiated by Ansible due to kernel updates"
     connect_timeout: 5

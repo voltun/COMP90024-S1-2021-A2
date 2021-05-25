@@ -1,0 +1,8 @@
+---
+
+# Clone github repo
+- name: Clone git repo
+  git:
+    repo: https://github.com/voltun/COMP90024-S1-2021-A2.git
+    dest: ~/github
+    update: yes

@@ -16,7 +16,8 @@ def main():
     config = initConfig()
     aurin = aurin_handler.AurinHandler(config)
 
-    aurin.getDatasetTitle(TEST_RECORDS)
+    aurin.queryFeatureType(TEST_IDENTI)
+    aurin.queryDataset(TEST_IDENTI)
     twitterSearch(config)
     twitterStream(config)
     uploadToDB("tweetSearch.txt")
