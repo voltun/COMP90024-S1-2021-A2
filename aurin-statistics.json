@@ -1,0 +1,2729 @@
+{
+    "docs": [
+        {
+            "city": "Albury (C)",
+            "agelessthan25": 1645,
+            "totalnum": 4985
+        },
+        {
+            "city": "Armidale Regional (A)",
+            "agelessthan25": 2388,
+            "totalnum": 7803
+        },
+        {
+            "city": "Ballina (A)",
+            "agelessthan25": 1364,
+            "totalnum": 5480
+        },
+        {
+            "city": "Balranald (A)",
+            "agelessthan25": 160,
+            "totalnum": 765
+        },
+        {
+            "city": "Bathurst Regional (A)",
+            "agelessthan25": 2419,
+            "totalnum": 8319
+        },
+        {
+            "city": "Bega Valley (A)",
+            "agelessthan25": 1047,
+            "totalnum": 3781
+        },
+        {
+            "city": "Bellingen (A)",
+            "agelessthan25": 412,
+            "totalnum": 1731
+        },
+        {
+            "city": "Berrigan (A)",
+            "agelessthan25": 181,
+            "totalnum": 792
+        },
+        {
+            "city": "Blacktown (C)",
+            "agelessthan25": 11354,
+            "totalnum": 35394
+        },
+        {
+            "city": "Bland (A)",
+            "agelessthan25": 225,
+            "totalnum": 977
+        },
+        {
+            "city": "Blayney (A)",
+            "agelessthan25": 303,
+            "totalnum": 955
+        },
+        {
+            "city": "Blue Mountains (C)",
+            "agelessthan25": 2145,
+            "totalnum": 7549
+        },
+        {
+            "city": "Bogan (A)",
+            "agelessthan25": 485,
+            "totalnum": 1669
+        },
+        {
+            "city": "Botany Bay (C)",
+            "agelessthan25": 1070,
+            "totalnum": 3930
+        },
+        {
+            "city": "Bourke (A)",
+            "agelessthan25": 657,
+            "totalnum": 3187
+        },
+        {
+            "city": "Brewarrina (A)",
+            "agelessthan25": 767,
+            "totalnum": 3841
+        },
+        {
+            "city": "Kempsey (A)",
+            "agelessthan25": 3009,
+            "totalnum": 11300
+        },
+        {
+            "city": "Kiama (A)",
+            "agelessthan25": 469,
+            "totalnum": 1839
+        },
+        {
+            "city": "Broken Hill (C)",
+            "agelessthan25": 1559,
+            "totalnum": 5654
+        },
+        {
+            "city": "Hilltops (A)",
+            "agelessthan25": 775,
+            "totalnum": 2923
+        },
+        {
+            "city": "Hornsby (A)",
+            "agelessthan25": 767,
+            "totalnum": 2983
+        },
+        {
+            "city": "Hunters Hill (A)",
+            "agelessthan25": 124,
+            "totalnum": 324
+        },
+        {
+            "city": "Inner West (A)",
+            "agelessthan25": 1968,
+            "totalnum": 9937
+        },
+        {
+            "city": "Inverell (A)",
+            "agelessthan25": 1582,
+            "totalnum": 5000
+        },
+        {
+            "city": "Junee (A)",
+            "agelessthan25": 423,
+            "totalnum": 1775
+        },
+        {
+            "city": "Ku-ring-gai (A)",
+            "agelessthan25": 332,
+            "totalnum": 1066
+        },
+        {
+            "city": "Kyogle (A)",
+            "agelessthan25": 299,
+            "totalnum": 1391
+        },
+        {
+            "city": "Lachlan (A)",
+            "agelessthan25": 1134,
+            "totalnum": 4041
+        },
+        {
+            "city": "Lake Macquarie (C)",
+            "agelessthan25": 9407,
+            "totalnum": 31976
+        },
+        {
+            "city": "Lane Cove (A)",
+            "agelessthan25": 146,
+            "totalnum": 538
+        },
+        {
+            "city": "Leeton (A)",
+            "agelessthan25": 802,
+            "totalnum": 2308
+        },
+        {
+            "city": "Lismore (C)",
+            "agelessthan25": 2441,
+            "totalnum": 8302
+        },
+        {
+            "city": "Lithgow (C)",
+            "agelessthan25": 1215,
+            "totalnum": 4746
+        },
+        {
+            "city": "Liverpool (C)",
+            "agelessthan25": 3564,
+            "totalnum": 11660
+        },
+        {
+            "city": "Liverpool Plains (A)",
+            "agelessthan25": 893,
+            "totalnum": 3835
+        },
+        {
+            "city": "Lockhart (A)",
+            "agelessthan25": 93,
+            "totalnum": 388
+        },
+        {
+            "city": "Maitland (C)",
+            "agelessthan25": 4644,
+            "totalnum": 15726
+        },
+        {
+            "city": "Mid-Coast (A)",
+            "agelessthan25": 5537,
+            "totalnum": 19742
+        },
+        {
+            "city": "Mid-Western Regional (A)",
+            "agelessthan25": 1351,
+            "totalnum": 4979
+        },
+        {
+            "city": "Moree Plains (A)",
+            "agelessthan25": 2671,
+            "totalnum": 10638
+        },
+        {
+            "city": "Mosman (A)",
+            "agelessthan25": 31,
+            "totalnum": 369
+        },
+        {
+            "city": "Murray River (A)",
+            "agelessthan25": 269,
+            "totalnum": 1440
+        },
+        {
+            "city": "Murrumbidgee (A)",
+            "agelessthan25": 222,
+            "totalnum": 1162
+        },
+        {
+            "city": "Muswellbrook (A)",
+            "agelessthan25": 1411,
+            "totalnum": 4959
+        },
+        {
+            "city": "Nambucca (A)",
+            "agelessthan25": 1426,
+            "totalnum": 5026
+        },
+        {
+            "city": "Narrabri (A)",
+            "agelessthan25": 1591,
+            "totalnum": 5880
+        },
+        {
+            "city": "Narrandera (A)",
+            "agelessthan25": 555,
+            "totalnum": 2172
+        },
+        {
+            "city": "Narromine (A)",
+            "agelessthan25": 1332,
+            "totalnum": 4760
+        },
+        {
+            "city": "Newcastle (C)",
+            "agelessthan25": 7058,
+            "totalnum": 23789
+        },
+        {
+            "city": "North Sydney (A)",
+            "agelessthan25": 130,
+            "totalnum": 1122
+        },
+        {
+            "city": "Northern Beaches (A)",
+            "agelessthan25": 1599,
+            "totalnum": 6689
+        },
+        {
+            "city": "Oberon (A)",
+            "agelessthan25": 270,
+            "totalnum": 762
+        },
+        {
+            "city": "Orange (C)",
+            "agelessthan25": 3002,
+            "totalnum": 9531
+        },
+        {
+            "city": "Parkes (A)",
+            "agelessthan25": 1843,
+            "totalnum": 5523
+        },
+        {
+            "city": "Parramatta (C)",
+            "agelessthan25": 1958,
+            "totalnum": 7683
+        },
+        {
+            "city": "Penrith (C)",
+            "agelessthan25": 10200,
+            "totalnum": 31911
+        },
+        {
+            "city": "Campbelltown (C) (NSW)",
+            "agelessthan25": 7160,
+            "totalnum": 22771
+        },
+        {
+            "city": "Canada Bay (A)",
+            "agelessthan25": 428,
+            "totalnum": 1938
+        },
+        {
+            "city": "Canterbury-Bankstown (A)",
+            "agelessthan25": 2831,
+            "totalnum": 10846
+        },
+        {
+            "city": "Carrathool (A)",
+            "agelessthan25": 242,
+            "totalnum": 901
+        },
+        {
+            "city": "Central Coast (C) (NSW)",
+            "agelessthan25": 15302,
+            "totalnum": 50249
+        },
+        {
+            "city": "Burwood (A)",
+            "agelessthan25": 153,
+            "totalnum": 731
+        },
+        {
+            "city": "Byron (A)",
+            "agelessthan25": 669,
+            "totalnum": 2570
+        },
+        {
+            "city": "Cabonne (A)",
+            "agelessthan25": 594,
+            "totalnum": 1917
+        },
+        {
+            "city": "Camden (A)",
+            "agelessthan25": 2491,
+            "totalnum": 8273
+        },
+        {
+            "city": "Central Darling (A)",
+            "agelessthan25": 646,
+            "totalnum": 2770
+        },
+        {
+            "city": "Cessnock (C)",
+            "agelessthan25": 4344,
+            "totalnum": 15234
+        },
+        {
+            "city": "Clarence Valley (A)",
+            "agelessthan25": 3204,
+            "totalnum": 11667
+        },
+        {
+            "city": "Cobar (A)",
+            "agelessthan25": 634,
+            "totalnum": 2577
+        },
+        {
+            "city": "Coffs Harbour (C)",
+            "agelessthan25": 4159,
+            "totalnum": 14233
+        },
+        {
+            "city": "Coolamon (A)",
+            "agelessthan25": 110,
+            "totalnum": 492
+        },
+        {
+            "city": "Coonamble (A)",
+            "agelessthan25": 1007,
+            "totalnum": 4238
+        },
+        {
+            "city": "Cowra (A)",
+            "agelessthan25": 1083,
+            "totalnum": 3817
+        },
+        {
+            "city": "Cumberland (A)",
+            "agelessthan25": 1448,
+            "totalnum": 6080
+        },
+        {
+            "city": "Dungog (A)",
+            "agelessthan25": 451,
+            "totalnum": 1682
+        },
+        {
+            "city": "Edward River (A)",
+            "agelessthan25": 456,
+            "totalnum": 1369
+        },
+        {
+            "city": "Eurobodalla (A)",
+            "agelessthan25": 2028,
+            "totalnum": 7562
+        },
+        {
+            "city": "Fairfield (C)",
+            "agelessthan25": 1833,
+            "totalnum": 5889
+        },
+        {
+            "city": "Federation (A)",
+            "agelessthan25": 208,
+            "totalnum": 856
+        },
+        {
+            "city": "Forbes (A)",
+            "agelessthan25": 1278,
+            "totalnum": 4313
+        },
+        {
+            "city": "Georges River (A)",
+            "agelessthan25": 1088,
+            "totalnum": 3841
+        },
+        {
+            "city": "Gilgandra (A)",
+            "agelessthan25": 608,
+            "totalnum": 2239
+        },
+        {
+            "city": "Glen Innes Severn (A)",
+            "agelessthan25": 459,
+            "totalnum": 1983
+        },
+        {
+            "city": "Goulburn Mulwaree (A)",
+            "agelessthan25": 1159,
+            "totalnum": 4545
+        },
+        {
+            "city": "Greater Hume Shire (A)",
+            "agelessthan25": 260,
+            "totalnum": 1036
+        },
+        {
+            "city": "Griffith (C)",
+            "agelessthan25": 1465,
+            "totalnum": 4871
+        },
+        {
+            "city": "Gundagai (A)",
+            "agelessthan25": 566,
+            "totalnum": 2052
+        },
+        {
+            "city": "Gunnedah (A)",
+            "agelessthan25": 1653,
+            "totalnum": 5852
+        },
+        {
+            "city": "Gwydir (A)",
+            "agelessthan25": 363,
+            "totalnum": 1107
+        },
+        {
+            "city": "Hawkesbury (C)",
+            "agelessthan25": 2977,
+            "totalnum": 9874
+        },
+        {
+            "city": "Hay (A)",
+            "agelessthan25": 193,
+            "totalnum": 704
+        },
+        {
+            "city": "Port Macquarie-Hastings (A)",
+            "agelessthan25": 3496,
+            "totalnum": 12378
+        },
+        {
+            "city": "Port Stephens (A)",
+            "agelessthan25": 3782,
+            "totalnum": 12865
+        },
+        {
+            "city": "Queanbeyan-Palerang Regional (A)",
+            "agelessthan25": 2149,
+            "totalnum": 7330
+        },
+        {
+            "city": "Randwick (C)",
+            "agelessthan25": 2556,
+            "totalnum": 9380
+        },
+        {
+            "city": "Richmond Valley (A)",
+            "agelessthan25": 1707,
+            "totalnum": 5699
+        },
+        {
+            "city": "Rockdale (C)",
+            "agelessthan25": 934,
+            "totalnum": 3763
+        },
+        {
+            "city": "Ryde (C)",
+            "agelessthan25": 630,
+            "totalnum": 2137
+        },
+        {
+            "city": "Shellharbour (C)",
+            "agelessthan25": 3220,
+            "totalnum": 10157
+        },
+        {
+            "city": "Shoalhaven (C)",
+            "agelessthan25": 5929,
+            "totalnum": 20712
+        },
+        {
+            "city": "Singleton (A)",
+            "agelessthan25": 1558,
+            "totalnum": 5268
+        },
+        {
+            "city": "Snowy Monaro Regional (A)",
+            "agelessthan25": 474,
+            "totalnum": 2055
+        },
+        {
+            "city": "Snowy Valleys (A)",
+            "agelessthan25": 579,
+            "totalnum": 2357
+        },
+        {
+            "city": "The Hills Shire (A)",
+            "agelessthan25": 1285,
+            "totalnum": 3755
+        },
+        {
+            "city": "Tweed (A)",
+            "agelessthan25": 4182,
+            "totalnum": 14976
+        },
+        {
+            "city": "Upper Hunter Shire (A)",
+            "agelessthan25": 790,
+            "totalnum": 2847
+        },
+        {
+            "city": "Upper Lachlan Shire (A)",
+            "agelessthan25": 190,
+            "totalnum": 749
+        },
+        {
+            "city": "Uralla (A)",
+            "agelessthan25": 360,
+            "totalnum": 1608
+        },
+        {
+            "city": "Wagga Wagga (C)",
+            "agelessthan25": 4309,
+            "totalnum": 13103
+        },
+        {
+            "city": "Walcha (A)",
+            "agelessthan25": 153,
+            "totalnum": 685
+        },
+        {
+            "city": "Walgett (A)",
+            "agelessthan25": 1326,
+            "totalnum": 6531
+        },
+        {
+            "city": "Warren (A)",
+            "agelessthan25": 418,
+            "totalnum": 1483
+        },
+        {
+            "city": "Warrumbungle Shire (A)",
+            "agelessthan25": 885,
+            "totalnum": 3336
+        },
+        {
+            "city": "Waverley (A)",
+            "agelessthan25": 318,
+            "totalnum": 1485
+        },
+        {
+            "city": "Weddin (A)",
+            "agelessthan25": 96,
+            "totalnum": 455
+        },
+        {
+            "city": "Wentworth (A)",
+            "agelessthan25": 511,
+            "totalnum": 2256
+        },
+        {
+            "city": "Western Plains Regional (A)",
+            "agelessthan25": 8894,
+            "totalnum": 30019
+        },
+        {
+            "city": "Willoughby (C)",
+            "agelessthan25": 201,
+            "totalnum": 711
+        },
+        {
+            "city": "Wingecarribee (A)",
+            "agelessthan25": 1224,
+            "totalnum": 4080
+        },
+        {
+            "city": "Wollondilly (A)",
+            "agelessthan25": 2119,
+            "totalnum": 6573
+        },
+        {
+            "city": "Wollongong (C)",
+            "agelessthan25": 6641,
+            "totalnum": 21686
+        },
+        {
+            "city": "Woollahra (A)",
+            "agelessthan25": 205,
+            "totalnum": 754
+        },
+        {
+            "city": "Yass Valley (A)",
+            "agelessthan25": 452,
+            "totalnum": 1603
+        },
+        {
+            "city": "Unincorporated NSW",
+            "agelessthan25": 58,
+            "totalnum": 196
+        },
+        {
+            "city": "Alpine (S)",
+            "agelessthan25": 113,
+            "totalnum": 426
+        },
+        {
+            "city": "Ararat (RC)",
+            "agelessthan25": 103,
+            "totalnum": 591
+        },
+        {
+            "city": "Ballarat (C)",
+            "agelessthan25": 1830,
+            "totalnum": 5473
+        },
+        {
+            "city": "Banyule (C)",
+            "agelessthan25": 865,
+            "totalnum": 3142
+        },
+        {
+            "city": "Bass Coast (S)",
+            "agelessthan25": 291,
+            "totalnum": 1106
+        },
+        {
+            "city": "Baw Baw (S)",
+            "agelessthan25": 499,
+            "totalnum": 1805
+        },
+        {
+            "city": "Bayside (C)",
+            "agelessthan25": 180,
+            "totalnum": 931
+        },
+        {
+            "city": "Benalla (RC)",
+            "agelessthan25": 246,
+            "totalnum": 781
+        },
+        {
+            "city": "Boroondara (C)",
+            "agelessthan25": 494,
+            "totalnum": 1643
+        },
+        {
+            "city": "Brimbank (C)",
+            "agelessthan25": 895,
+            "totalnum": 3326
+        },
+        {
+            "city": "Buloke (S)",
+            "agelessthan25": 70,
+            "totalnum": 207
+        },
+        {
+            "city": "Campaspe (S)",
+            "agelessthan25": 892,
+            "totalnum": 3237
+        },
+        {
+            "city": "Cardinia (S)",
+            "agelessthan25": 792,
+            "totalnum": 3002
+        },
+        {
+            "city": "Casey (C)",
+            "agelessthan25": 1931,
+            "totalnum": 6577
+        },
+        {
+            "city": "Central Goldfields (S)",
+            "agelessthan25": 114,
+            "totalnum": 617
+        },
+        {
+            "city": "Colac-Otway (S)",
+            "agelessthan25": 289,
+            "totalnum": 1013
+        },
+        {
+            "city": "Corangamite (S)",
+            "agelessthan25": 176,
+            "totalnum": 541
+        },
+        {
+            "city": "Darebin (C)",
+            "agelessthan25": 1371,
+            "totalnum": 5320
+        },
+        {
+            "city": "East Gippsland (S)",
+            "agelessthan25": 1207,
+            "totalnum": 4671
+        },
+        {
+            "city": "Frankston (C)",
+            "agelessthan25": 1493,
+            "totalnum": 5766
+        },
+        {
+            "city": "Gannawarra (S)",
+            "agelessthan25": 191,
+            "totalnum": 702
+        },
+        {
+            "city": "Greater Shepparton (C)",
+            "agelessthan25": 2293,
+            "totalnum": 8191
+        },
+        {
+            "city": "Hepburn (S)",
+            "agelessthan25": 81,
+            "totalnum": 506
+        },
+        {
+            "city": "Hindmarsh (S)",
+            "agelessthan25": 57,
+            "totalnum": 309
+        },
+        {
+            "city": "Hobsons Bay (C)",
+            "agelessthan25": 492,
+            "totalnum": 2207
+        },
+        {
+            "city": "Horsham (RC)",
+            "agelessthan25": 228,
+            "totalnum": 953
+        },
+        {
+            "city": "Hume (C)",
+            "agelessthan25": 1763,
+            "totalnum": 6015
+        },
+        {
+            "city": "Indigo (S)",
+            "agelessthan25": 176,
+            "totalnum": 816
+        },
+        {
+            "city": "Kingston (C) (Vic.)",
+            "agelessthan25": 675,
+            "totalnum": 2691
+        },
+        {
+            "city": "Knox (C)",
+            "agelessthan25": 1029,
+            "totalnum": 3323
+        },
+        {
+            "city": "Latrobe (C) (Vic.)",
+            "agelessthan25": 1200,
+            "totalnum": 4217
+        },
+        {
+            "city": "Loddon (S)",
+            "agelessthan25": 102,
+            "totalnum": 444
+        },
+        {
+            "city": "Macedon Ranges (S)",
+            "agelessthan25": 254,
+            "totalnum": 1206
+        },
+        {
+            "city": "Manningham (C)",
+            "agelessthan25": 304,
+            "totalnum": 973
+        },
+        {
+            "city": "Mansfield (S)",
+            "agelessthan25": 89,
+            "totalnum": 317
+        },
+        {
+            "city": "Maribyrnong (C)",
+            "agelessthan25": 493,
+            "totalnum": 2163
+        },
+        {
+            "city": "Maroondah (C)",
+            "agelessthan25": 598,
+            "totalnum": 2484
+        },
+        {
+            "city": "Melbourne (C)",
+            "agelessthan25": 856,
+            "totalnum": 2712
+        },
+        {
+            "city": "Melton (C)",
+            "agelessthan25": 1454,
+            "totalnum": 5146
+        },
+        {
+            "city": "Mildura (RC)",
+            "agelessthan25": 2106,
+            "totalnum": 7128
+        },
+        {
+            "city": "Mitchell (S)",
+            "agelessthan25": 711,
+            "totalnum": 2410
+        },
+        {
+            "city": "Moira (S)",
+            "agelessthan25": 491,
+            "totalnum": 1842
+        },
+        {
+            "city": "Monash (C)",
+            "agelessthan25": 623,
+            "totalnum": 1890
+        },
+        {
+            "city": "Moonee Valley (C)",
+            "agelessthan25": 566,
+            "totalnum": 2241
+        },
+        {
+            "city": "Moorabool (S)",
+            "agelessthan25": 392,
+            "totalnum": 1466
+        },
+        {
+            "city": "Moreland (C)",
+            "agelessthan25": 923,
+            "totalnum": 4014
+        },
+        {
+            "city": "Mornington Peninsula (S)",
+            "agelessthan25": 1534,
+            "totalnum": 5524
+        },
+        {
+            "city": "Strathfield (A)",
+            "agelessthan25": 233,
+            "totalnum": 619
+        },
+        {
+            "city": "Sutherland Shire (A)",
+            "agelessthan25": 2595,
+            "totalnum": 11020
+        },
+        {
+            "city": "Sydney (C)",
+            "agelessthan25": 2519,
+            "totalnum": 11699
+        },
+        {
+            "city": "Tamworth Regional (A)",
+            "agelessthan25": 6336,
+            "totalnum": 22538
+        },
+        {
+            "city": "Temora (A)",
+            "agelessthan25": 132,
+            "totalnum": 569
+        },
+        {
+            "city": "Tenterfield (A)",
+            "agelessthan25": 286,
+            "totalnum": 1345
+        },
+        {
+            "city": "Glen Eira (C)",
+            "agelessthan25": 239,
+            "totalnum": 1253
+        },
+        {
+            "city": "Glenelg (S)",
+            "agelessthan25": 487,
+            "totalnum": 1766
+        },
+        {
+            "city": "Golden Plains (S)",
+            "agelessthan25": 184,
+            "totalnum": 789
+        },
+        {
+            "city": "Greater Bendigo (C)",
+            "agelessthan25": 2257,
+            "totalnum": 7076
+        },
+        {
+            "city": "Greater Dandenong (C)",
+            "agelessthan25": 539,
+            "totalnum": 2047
+        },
+        {
+            "city": "Greater Geelong (C)",
+            "agelessthan25": 2850,
+            "totalnum": 9640
+        },
+        {
+            "city": "Mount Alexander (S)",
+            "agelessthan25": 139,
+            "totalnum": 840
+        },
+        {
+            "city": "Moyne (S)",
+            "agelessthan25": 157,
+            "totalnum": 707
+        },
+        {
+            "city": "Murrindindi (S)",
+            "agelessthan25": 166,
+            "totalnum": 794
+        },
+        {
+            "city": "Nillumbik (S)",
+            "agelessthan25": 235,
+            "totalnum": 1099
+        },
+        {
+            "city": "Northern Grampians (S)",
+            "agelessthan25": 164,
+            "totalnum": 628
+        },
+        {
+            "city": "Port Phillip (C)",
+            "agelessthan25": 441,
+            "totalnum": 2149
+        },
+        {
+            "city": "Pyrenees (S)",
+            "agelessthan25": 157,
+            "totalnum": 535
+        },
+        {
+            "city": "Queenscliffe (B)",
+            "agelessthan25": 0,
+            "totalnum": 55
+        },
+        {
+            "city": "South Gippsland (S)",
+            "agelessthan25": 257,
+            "totalnum": 1057
+        },
+        {
+            "city": "Southern Grampians (S)",
+            "agelessthan25": 232,
+            "totalnum": 877
+        },
+        {
+            "city": "Stonnington (C)",
+            "agelessthan25": 452,
+            "totalnum": 1725
+        },
+        {
+            "city": "Strathbogie (S)",
+            "agelessthan25": 77,
+            "totalnum": 495
+        },
+        {
+            "city": "Surf Coast (S)",
+            "agelessthan25": 244,
+            "totalnum": 774
+        },
+        {
+            "city": "Swan Hill (RC)",
+            "agelessthan25": 887,
+            "totalnum": 2960
+        },
+        {
+            "city": "Towong (S)",
+            "agelessthan25": 51,
+            "totalnum": 391
+        },
+        {
+            "city": "Wangaratta (RC)",
+            "agelessthan25": 446,
+            "totalnum": 1426
+        },
+        {
+            "city": "Warrnambool (C)",
+            "agelessthan25": 724,
+            "totalnum": 2119
+        },
+        {
+            "city": "Wellington (S)",
+            "agelessthan25": 688,
+            "totalnum": 2566
+        },
+        {
+            "city": "West Wimmera (S)",
+            "agelessthan25": 0,
+            "totalnum": 90
+        },
+        {
+            "city": "Whitehorse (C)",
+            "agelessthan25": 430,
+            "totalnum": 1634
+        },
+        {
+            "city": "Whittlesea (C)",
+            "agelessthan25": 1708,
+            "totalnum": 6562
+        },
+        {
+            "city": "Wodonga (C)",
+            "agelessthan25": 1225,
+            "totalnum": 3682
+        },
+        {
+            "city": "Wyndham (C)",
+            "agelessthan25": 1976,
+            "totalnum": 6859
+        },
+        {
+            "city": "Yarra (C)",
+            "agelessthan25": 554,
+            "totalnum": 2119
+        },
+        {
+            "city": "Yarra Ranges (S)",
+            "agelessthan25": 1563,
+            "totalnum": 5762
+        },
+        {
+            "city": "Yarriambiack (S)",
+            "agelessthan25": 62,
+            "totalnum": 278
+        },
+        {
+            "city": "Unincorporated Vic",
+            "agelessthan25": 15,
+            "totalnum": 43
+        },
+        {
+            "city": "Aurukun (S)",
+            "agelessthan25": 882,
+            "totalnum": 4039
+        },
+        {
+            "city": "Balonne (S)",
+            "agelessthan25": 660,
+            "totalnum": 2857
+        },
+        {
+            "city": "Banana (S)",
+            "agelessthan25": 519,
+            "totalnum": 2335
+        },
+        {
+            "city": "Barcaldine (R)",
+            "agelessthan25": 170,
+            "totalnum": 662
+        },
+        {
+            "city": "Barcoo (S)",
+            "agelessthan25": 0,
+            "totalnum": 100
+        },
+        {
+            "city": "Blackall-Tambo (R)",
+            "agelessthan25": 85,
+            "totalnum": 429
+        },
+        {
+            "city": "Longreach (R)",
+            "agelessthan25": 234,
+            "totalnum": 787
+        },
+        {
+            "city": "Mackay (R)",
+            "agelessthan25": 6531,
+            "totalnum": 22945
+        },
+        {
+            "city": "McKinlay (S)",
+            "agelessthan25": 24,
+            "totalnum": 135
+        },
+        {
+            "city": "Mapoon (S)",
+            "agelessthan25": 260,
+            "totalnum": 1080
+        },
+        {
+            "city": "Maranoa (R)",
+            "agelessthan25": 881,
+            "totalnum": 3685
+        },
+        {
+            "city": "Mareeba (S)",
+            "agelessthan25": 2456,
+            "totalnum": 10151
+        },
+        {
+            "city": "Moreton Bay (R)",
+            "agelessthan25": 15009,
+            "totalnum": 48235
+        },
+        {
+            "city": "Mornington (S)",
+            "agelessthan25": 921,
+            "totalnum": 3628
+        },
+        {
+            "city": "Mount Isa (C)",
+            "agelessthan25": 3182,
+            "totalnum": 12178
+        },
+        {
+            "city": "Murweh (S)",
+            "agelessthan25": 501,
+            "totalnum": 1862
+        },
+        {
+            "city": "Napranum (S)",
+            "agelessthan25": 823,
+            "totalnum": 3088
+        },
+        {
+            "city": "Noosa (S)",
+            "agelessthan25": 898,
+            "totalnum": 3182
+        },
+        {
+            "city": "North Burnett (R)",
+            "agelessthan25": 663,
+            "totalnum": 2694
+        },
+        {
+            "city": "Northern Peninsula Area (R)",
+            "agelessthan25": 2544,
+            "totalnum": 8686
+        },
+        {
+            "city": "Palm Island (S)",
+            "agelessthan25": 2167,
+            "totalnum": 8117
+        },
+        {
+            "city": "Paroo (S)",
+            "agelessthan25": 321,
+            "totalnum": 1603
+        },
+        {
+            "city": "Pormpuraaw (S)",
+            "agelessthan25": 517,
+            "totalnum": 2409
+        },
+        {
+            "city": "Quilpie (S)",
+            "agelessthan25": 71,
+            "totalnum": 548
+        },
+        {
+            "city": "Redland (C)",
+            "agelessthan25": 4034,
+            "totalnum": 14443
+        },
+        {
+            "city": "Richmond (S)",
+            "agelessthan25": 26,
+            "totalnum": 187
+        },
+        {
+            "city": "Rockhampton (R)",
+            "agelessthan25": 6323,
+            "totalnum": 21441
+        },
+        {
+            "city": "Scenic Rim (R)",
+            "agelessthan25": 1307,
+            "totalnum": 4554
+        },
+        {
+            "city": "Somerset (R)",
+            "agelessthan25": 833,
+            "totalnum": 3009
+        },
+        {
+            "city": "South Burnett (R)",
+            "agelessthan25": 1774,
+            "totalnum": 6098
+        },
+        {
+            "city": "Southern Downs (R)",
+            "agelessthan25": 1688,
+            "totalnum": 5416
+        },
+        {
+            "city": "Sunshine Coast (R)",
+            "agelessthan25": 7062,
+            "totalnum": 23762
+        },
+        {
+            "city": "Tablelands (R)",
+            "agelessthan25": 1769,
+            "totalnum": 6607
+        },
+        {
+            "city": "Toowoomba (R)",
+            "agelessthan25": 7353,
+            "totalnum": 23539
+        },
+        {
+            "city": "Torres (S)",
+            "agelessthan25": 2624,
+            "totalnum": 10132
+        },
+        {
+            "city": "Torres Strait Island (R)",
+            "agelessthan25": 3426,
+            "totalnum": 14287
+        },
+        {
+            "city": "Townsville (C)",
+            "agelessthan25": 15058,
+            "totalnum": 48694
+        },
+        {
+            "city": "Brisbane (C)",
+            "agelessthan25": 22808,
+            "totalnum": 77714
+        },
+        {
+            "city": "Burke (S)",
+            "agelessthan25": 126,
+            "totalnum": 644
+        },
+        {
+            "city": "Cairns (R)",
+            "agelessthan25": 14370,
+            "totalnum": 53263
+        },
+        {
+            "city": "Carpentaria (S)",
+            "agelessthan25": 759,
+            "totalnum": 3228
+        },
+        {
+            "city": "Cassowary Coast (R)",
+            "agelessthan25": 2884,
+            "totalnum": 10637
+        },
+        {
+            "city": "Central Highlands (R) (Qld)",
+            "agelessthan25": 1212,
+            "totalnum": 4688
+        },
+        {
+            "city": "Charters Towers (R)",
+            "agelessthan25": 1090,
+            "totalnum": 3623
+        },
+        {
+            "city": "Boulia (S)",
+            "agelessthan25": 81,
+            "totalnum": 390
+        },
+        {
+            "city": "Bulloo (S)",
+            "agelessthan25": 52,
+            "totalnum": 227
+        },
+        {
+            "city": "Bundaberg (R)",
+            "agelessthan25": 4214,
+            "totalnum": 13507
+        },
+        {
+            "city": "Burdekin (S)",
+            "agelessthan25": 1002,
+            "totalnum": 3630
+        },
+        {
+            "city": "Cherbourg (S)",
+            "agelessthan25": 1124,
+            "totalnum": 3931
+        },
+        {
+            "city": "Cloncurry (S)",
+            "agelessthan25": 648,
+            "totalnum": 2856
+        },
+        {
+            "city": "Cook (S)",
+            "agelessthan25": 994,
+            "totalnum": 3776
+        },
+        {
+            "city": "Croydon (S)",
+            "agelessthan25": 39,
+            "totalnum": 191
+        },
+        {
+            "city": "Weipa (T)",
+            "agelessthan25": 802,
+            "totalnum": 3328
+        },
+        {
+            "city": "Western Downs (R)",
+            "agelessthan25": 1878,
+            "totalnum": 6418
+        },
+        {
+            "city": "Whitsunday (R)",
+            "agelessthan25": 1678,
+            "totalnum": 6641
+        },
+        {
+            "city": "Clare and Gilbert Valleys (DC)",
+            "agelessthan25": 119,
+            "totalnum": 448
+        },
+        {
+            "city": "Etheridge (S)",
+            "agelessthan25": 3,
+            "totalnum": 138
+        },
+        {
+            "city": "Flinders (S) (Qld)",
+            "agelessthan25": 128,
+            "totalnum": 454
+        },
+        {
+            "city": "Diamantina (S)",
+            "agelessthan25": 71,
+            "totalnum": 230
+        },
+        {
+            "city": "Doomadgee (S)",
+            "agelessthan25": 1121,
+            "totalnum": 4138
+        },
+        {
+            "city": "Douglas (S)",
+            "agelessthan25": 849,
+            "totalnum": 3646
+        },
+        {
+            "city": "Fraser Coast (R)",
+            "agelessthan25": 4415,
+            "totalnum": 15034
+        },
+        {
+            "city": "Gladstone (R)",
+            "agelessthan25": 3027,
+            "totalnum": 9820
+        },
+        {
+            "city": "Gold Coast (C)",
+            "agelessthan25": 12146,
+            "totalnum": 40514
+        },
+        {
+            "city": "Goondiwindi (R)",
+            "agelessthan25": 534,
+            "totalnum": 2093
+        },
+        {
+            "city": "Gympie (R)",
+            "agelessthan25": 1617,
+            "totalnum": 6002
+        },
+        {
+            "city": "Hinchinbrook (S)",
+            "agelessthan25": 710,
+            "totalnum": 2253
+        },
+        {
+            "city": "Hope Vale (S)",
+            "agelessthan25": 851,
+            "totalnum": 3526
+        },
+        {
+            "city": "Ipswich (C)",
+            "agelessthan25": 10639,
+            "totalnum": 31206
+        },
+        {
+            "city": "Isaac (R)",
+            "agelessthan25": 699,
+            "totalnum": 3096
+        },
+        {
+            "city": "Kowanyama (S)",
+            "agelessthan25": 686,
+            "totalnum": 3336
+        },
+        {
+            "city": "Livingstone (S)",
+            "agelessthan25": 2011,
+            "totalnum": 6313
+        },
+        {
+            "city": "Lockhart River (S)",
+            "agelessthan25": 627,
+            "totalnum": 2338
+        },
+        {
+            "city": "Lockyer Valley (R)",
+            "agelessthan25": 1500,
+            "totalnum": 5271
+        },
+        {
+            "city": "Logan (C)",
+            "agelessthan25": 11589,
+            "totalnum": 36656
+        },
+        {
+            "city": "Adelaide (C)",
+            "agelessthan25": 303,
+            "totalnum": 1103
+        },
+        {
+            "city": "Winton (S)",
+            "agelessthan25": 126,
+            "totalnum": 463
+        },
+        {
+            "city": "Woorabinda (S)",
+            "agelessthan25": 875,
+            "totalnum": 3085
+        },
+        {
+            "city": "Adelaide Hills (DC)",
+            "agelessthan25": 305,
+            "totalnum": 992
+        },
+        {
+            "city": "Alexandrina (DC)",
+            "agelessthan25": 472,
+            "totalnum": 1562
+        },
+        {
+            "city": "Wujal Wujal (S)",
+            "agelessthan25": 215,
+            "totalnum": 1071
+        },
+        {
+            "city": "Yarrabah (S)",
+            "agelessthan25": 2327,
+            "totalnum": 8312
+        },
+        {
+            "city": "Ceduna (DC)",
+            "agelessthan25": 592,
+            "totalnum": 2564
+        },
+        {
+            "city": "Anangu Pitjantjatjara (AC)",
+            "agelessthan25": 1970,
+            "totalnum": 7160
+        },
+        {
+            "city": "Barossa (DC)",
+            "agelessthan25": 187,
+            "totalnum": 788
+        },
+        {
+            "city": "Barunga West (DC)",
+            "agelessthan25": 61,
+            "totalnum": 227
+        },
+        {
+            "city": "Berri and Barmera (DC)",
+            "agelessthan25": 355,
+            "totalnum": 1625
+        },
+        {
+            "city": "Burnside (C)",
+            "agelessthan25": 171,
+            "totalnum": 619
+        },
+        {
+            "city": "Campbelltown (C) (SA)",
+            "agelessthan25": 367,
+            "totalnum": 1297
+        },
+        {
+            "city": "Charles Sturt (C)",
+            "agelessthan25": 1813,
+            "totalnum": 6513
+        },
+        {
+            "city": "Cleve (DC)",
+            "agelessthan25": 0,
+            "totalnum": 35
+        },
+        {
+            "city": "Coober Pedy (DC)",
+            "agelessthan25": 220,
+            "totalnum": 1148
+        },
+        {
+            "city": "Copper Coast (DC)",
+            "agelessthan25": 413,
+            "totalnum": 1347
+        },
+        {
+            "city": "Elliston (DC)",
+            "agelessthan25": 0,
+            "totalnum": 96
+        },
+        {
+            "city": "Franklin Harbour (DC)",
+            "agelessthan25": 36,
+            "totalnum": 78
+        },
+        {
+            "city": "Gawler (T)",
+            "agelessthan25": 528,
+            "totalnum": 1533
+        },
+        {
+            "city": "Goyder (DC)",
+            "agelessthan25": 62,
+            "totalnum": 269
+        },
+        {
+            "city": "Grant (DC)",
+            "agelessthan25": 68,
+            "totalnum": 545
+        },
+        {
+            "city": "Flinders Ranges (DC)",
+            "agelessthan25": 206,
+            "totalnum": 870
+        },
+        {
+            "city": "Holdfast Bay (C)",
+            "agelessthan25": 276,
+            "totalnum": 1239
+        },
+        {
+            "city": "Kangaroo Island (DC)",
+            "agelessthan25": 73,
+            "totalnum": 310
+        },
+        {
+            "city": "Karoonda East Murray (DC)",
+            "agelessthan25": 0,
+            "totalnum": 29
+        },
+        {
+            "city": "Light (RegC)",
+            "agelessthan25": 210,
+            "totalnum": 639
+        },
+        {
+            "city": "Lower Eyre Peninsula (DC)",
+            "agelessthan25": 169,
+            "totalnum": 634
+        },
+        {
+            "city": "Loxton Waikerie (DC)",
+            "agelessthan25": 284,
+            "totalnum": 891
+        },
+        {
+            "city": "Mallala (DC)",
+            "agelessthan25": 357,
+            "totalnum": 1024
+        },
+        {
+            "city": "Mount Barker (DC)",
+            "agelessthan25": 472,
+            "totalnum": 1350
+        },
+        {
+            "city": "Port Pirie City and Dists (M)",
+            "agelessthan25": 596,
+            "totalnum": 1931
+        },
+        {
+            "city": "Kimba (DC)",
+            "agelessthan25": 21,
+            "totalnum": 52
+        },
+        {
+            "city": "Kingston (DC) (SA)",
+            "agelessthan25": 68,
+            "totalnum": 233
+        },
+        {
+            "city": "Maralinga Tjarutja (AC)",
+            "agelessthan25": 67,
+            "totalnum": 157
+        },
+        {
+            "city": "Marion (C)",
+            "agelessthan25": 1368,
+            "totalnum": 4247
+        },
+        {
+            "city": "Mid Murray (DC)",
+            "agelessthan25": 159,
+            "totalnum": 769
+        },
+        {
+            "city": "Mitcham (C)",
+            "agelessthan25": 466,
+            "totalnum": 1653
+        },
+        {
+            "city": "Mount Gambier (C)",
+            "agelessthan25": 645,
+            "totalnum": 2084
+        },
+        {
+            "city": "Mount Remarkable (DC)",
+            "agelessthan25": 63,
+            "totalnum": 345
+        },
+        {
+            "city": "Murray Bridge (RC)",
+            "agelessthan25": 1123,
+            "totalnum": 3655
+        },
+        {
+            "city": "Orroroo/Carrieton (DC)",
+            "agelessthan25": 0,
+            "totalnum": 15
+        },
+        {
+            "city": "Streaky Bay (DC)",
+            "agelessthan25": 6,
+            "totalnum": 117
+        },
+        {
+            "city": "Naracoorte and Lucindale (DC)",
+            "agelessthan25": 136,
+            "totalnum": 564
+        },
+        {
+            "city": "Northern Areas (DC)",
+            "agelessthan25": 44,
+            "totalnum": 275
+        },
+        {
+            "city": "Norwood Payneham St Peters (C)",
+            "agelessthan25": 252,
+            "totalnum": 938
+        },
+        {
+            "city": "Onkaparinga (C)",
+            "agelessthan25": 3034,
+            "totalnum": 9306
+        },
+        {
+            "city": "Peterborough (DC)",
+            "agelessthan25": 72,
+            "totalnum": 310
+        },
+        {
+            "city": "Playford (C)",
+            "agelessthan25": 3462,
+            "totalnum": 10473
+        },
+        {
+            "city": "Port Adelaide Enfield (C)",
+            "agelessthan25": 3051,
+            "totalnum": 10642
+        },
+        {
+            "city": "Port Augusta (C)",
+            "agelessthan25": 2226,
+            "totalnum": 9375
+        },
+        {
+            "city": "Port Lincoln (C)",
+            "agelessthan25": 714,
+            "totalnum": 2591
+        },
+        {
+            "city": "Prospect (C)",
+            "agelessthan25": 182,
+            "totalnum": 816
+        },
+        {
+            "city": "Renmark Paringa (DC)",
+            "agelessthan25": 199,
+            "totalnum": 805
+        },
+        {
+            "city": "Robe (DC)",
+            "agelessthan25": 6,
+            "totalnum": 57
+        },
+        {
+            "city": "Roxby Downs (M)",
+            "agelessthan25": 117,
+            "totalnum": 588
+        },
+        {
+            "city": "Salisbury (C)",
+            "agelessthan25": 2937,
+            "totalnum": 10521
+        },
+        {
+            "city": "Southern Mallee (DC)",
+            "agelessthan25": 30,
+            "totalnum": 161
+        },
+        {
+            "city": "Tatiara (DC)",
+            "agelessthan25": 42,
+            "totalnum": 324
+        },
+        {
+            "city": "Tea Tree Gully (C)",
+            "agelessthan25": 1008,
+            "totalnum": 4027
+        },
+        {
+            "city": "The Coorong (DC)",
+            "agelessthan25": 254,
+            "totalnum": 1214
+        },
+        {
+            "city": "Tumby Bay (DC)",
+            "agelessthan25": 17,
+            "totalnum": 193
+        },
+        {
+            "city": "Unley (C)",
+            "agelessthan25": 233,
+            "totalnum": 837
+        },
+        {
+            "city": "Victor Harbor (C)",
+            "agelessthan25": 173,
+            "totalnum": 697
+        },
+        {
+            "city": "Wakefield (DC)",
+            "agelessthan25": 162,
+            "totalnum": 583
+        },
+        {
+            "city": "Coolgardie (S)",
+            "agelessthan25": 333,
+            "totalnum": 1367
+        },
+        {
+            "city": "Coorow (S)",
+            "agelessthan25": 48,
+            "totalnum": 147
+        },
+        {
+            "city": "Wattle Range (DC)",
+            "agelessthan25": 208,
+            "totalnum": 856
+        },
+        {
+            "city": "West Torrens (C)",
+            "agelessthan25": 664,
+            "totalnum": 2474
+        },
+        {
+            "city": "Walkerville (M)",
+            "agelessthan25": 88,
+            "totalnum": 246
+        },
+        {
+            "city": "Whyalla (C)",
+            "agelessthan25": 1064,
+            "totalnum": 3525
+        },
+        {
+            "city": "Wudinna (DC)",
+            "agelessthan25": 9,
+            "totalnum": 87
+        },
+        {
+            "city": "Yankalilla (DC)",
+            "agelessthan25": 31,
+            "totalnum": 195
+        },
+        {
+            "city": "Yorke Peninsula (DC)",
+            "agelessthan25": 243,
+            "totalnum": 1125
+        },
+        {
+            "city": "Unincorporated SA",
+            "agelessthan25": 606,
+            "totalnum": 3038
+        },
+        {
+            "city": "Albany (C)",
+            "agelessthan25": 1270,
+            "totalnum": 4703
+        },
+        {
+            "city": "Armadale (C)",
+            "agelessthan25": 2246,
+            "totalnum": 7474
+        },
+        {
+            "city": "Ashburton (S)",
+            "agelessthan25": 660,
+            "totalnum": 4768
+        },
+        {
+            "city": "Augusta-Margaret River (S)",
+            "agelessthan25": 171,
+            "totalnum": 749
+        },
+        {
+            "city": "Bassendean (T)",
+            "agelessthan25": 448,
+            "totalnum": 1498
+        },
+        {
+            "city": "Bayswater (C)",
+            "agelessthan25": 1089,
+            "totalnum": 3558
+        },
+        {
+            "city": "Belmont (C)",
+            "agelessthan25": 1040,
+            "totalnum": 3972
+        },
+        {
+            "city": "Beverley (S)",
+            "agelessthan25": 51,
+            "totalnum": 249
+        },
+        {
+            "city": "Boddington (S)",
+            "agelessthan25": 62,
+            "totalnum": 346
+        },
+        {
+            "city": "Boyup Brook (S)",
+            "agelessthan25": 0,
+            "totalnum": 71
+        },
+        {
+            "city": "Bridgetown-Greenbushes (S)",
+            "agelessthan25": 40,
+            "totalnum": 238
+        },
+        {
+            "city": "Brookton (S)",
+            "agelessthan25": 82,
+            "totalnum": 337
+        },
+        {
+            "city": "Broome (S)",
+            "agelessthan25": 4003,
+            "totalnum": 16966
+        },
+        {
+            "city": "Bruce Rock (S)",
+            "agelessthan25": 13,
+            "totalnum": 104
+        },
+        {
+            "city": "Bunbury (C)",
+            "agelessthan25": 1222,
+            "totalnum": 4279
+        },
+        {
+            "city": "Busselton (C)",
+            "agelessthan25": 558,
+            "totalnum": 2175
+        },
+        {
+            "city": "Broomehill-Tambellup (S)",
+            "agelessthan25": 64,
+            "totalnum": 420
+        },
+        {
+            "city": "Cambridge (T)",
+            "agelessthan25": 77,
+            "totalnum": 315
+        },
+        {
+            "city": "Canning (C)",
+            "agelessthan25": 1228,
+            "totalnum": 3583
+        },
+        {
+            "city": "Capel (S)",
+            "agelessthan25": 448,
+            "totalnum": 1468
+        },
+        {
+            "city": "Carnamah (S)",
+            "agelessthan25": 0,
+            "totalnum": 70
+        },
+        {
+            "city": "Carnarvon (S)",
+            "agelessthan25": 778,
+            "totalnum": 3576
+        },
+        {
+            "city": "Chapman Valley (S)",
+            "agelessthan25": 49,
+            "totalnum": 230
+        },
+        {
+            "city": "Chittering (S)",
+            "agelessthan25": 201,
+            "totalnum": 399
+        },
+        {
+            "city": "Corrigin (S)",
+            "agelessthan25": 20,
+            "totalnum": 98
+        },
+        {
+            "city": "Dowerin (S)",
+            "agelessthan25": 12,
+            "totalnum": 63
+        },
+        {
+            "city": "Claremont (T)",
+            "agelessthan25": 117,
+            "totalnum": 214
+        },
+        {
+            "city": "Cockburn (C)",
+            "agelessthan25": 1817,
+            "totalnum": 6322
+        },
+        {
+            "city": "Collie (S)",
+            "agelessthan25": 348,
+            "totalnum": 1180
+        },
+        {
+            "city": "Cottesloe (T)",
+            "agelessthan25": 14,
+            "totalnum": 142
+        },
+        {
+            "city": "Cranbrook (S)",
+            "agelessthan25": 0,
+            "totalnum": 89
+        },
+        {
+            "city": "Cuballing (S)",
+            "agelessthan25": 0,
+            "totalnum": 49
+        },
+        {
+            "city": "Derby-West Kimberley (S)",
+            "agelessthan25": 4185,
+            "totalnum": 17618
+        },
+        {
+            "city": "Donnybrook-Balingup (S)",
+            "agelessthan25": 72,
+            "totalnum": 450
+        },
+        {
+            "city": "Cue (S)",
+            "agelessthan25": 8,
+            "totalnum": 103
+        },
+        {
+            "city": "Cunderdin (S)",
+            "agelessthan25": 23,
+            "totalnum": 103
+        },
+        {
+            "city": "Dalwallinu (S)",
+            "agelessthan25": 16,
+            "totalnum": 248
+        },
+        {
+            "city": "Dandaragan (S)",
+            "agelessthan25": 67,
+            "totalnum": 297
+        },
+        {
+            "city": "Dardanup (S)",
+            "agelessthan25": 331,
+            "totalnum": 1011
+        },
+        {
+            "city": "Denmark (S)",
+            "agelessthan25": 76,
+            "totalnum": 276
+        },
+        {
+            "city": "Dumbleyung (S)",
+            "agelessthan25": 0,
+            "totalnum": 90
+        },
+        {
+            "city": "Dundas (S)",
+            "agelessthan25": 64,
+            "totalnum": 309
+        },
+        {
+            "city": "East Fremantle (T)",
+            "agelessthan25": 23,
+            "totalnum": 156
+        },
+        {
+            "city": "East Pilbara (S)",
+            "agelessthan25": 1842,
+            "totalnum": 8916
+        },
+        {
+            "city": "Esperance (S)",
+            "agelessthan25": 728,
+            "totalnum": 2090
+        },
+        {
+            "city": "Exmouth (S)",
+            "agelessthan25": 46,
+            "totalnum": 226
+        },
+        {
+            "city": "Fremantle (C)",
+            "agelessthan25": 325,
+            "totalnum": 1671
+        },
+        {
+            "city": "Gingin (S)",
+            "agelessthan25": 65,
+            "totalnum": 368
+        },
+        {
+            "city": "Gnowangerup (S)",
+            "agelessthan25": 50,
+            "totalnum": 353
+        },
+        {
+            "city": "Kalgoorlie/Boulder (C)",
+            "agelessthan25": 2062,
+            "totalnum": 7762
+        },
+        {
+            "city": "Karratha (C)",
+            "agelessthan25": 2885,
+            "totalnum": 10763
+        },
+        {
+            "city": "Greater Geraldton (C)",
+            "agelessthan25": 3461,
+            "totalnum": 13413
+        },
+        {
+            "city": "Halls Creek (S)",
+            "agelessthan25": 2014,
+            "totalnum": 8066
+        },
+        {
+            "city": "Harvey (S)",
+            "agelessthan25": 675,
+            "totalnum": 2202
+        },
+        {
+            "city": "Goomalling (S)",
+            "agelessthan25": 24,
+            "totalnum": 130
+        },
+        {
+            "city": "Gosnells (C)",
+            "agelessthan25": 3044,
+            "totalnum": 10226
+        },
+        {
+            "city": "Irwin (S)",
+            "agelessthan25": 35,
+            "totalnum": 364
+        },
+        {
+            "city": "Jerramungup (S)",
+            "agelessthan25": 6,
+            "totalnum": 122
+        },
+        {
+            "city": "Joondalup (C)",
+            "agelessthan25": 963,
+            "totalnum": 4065
+        },
+        {
+            "city": "Kalamunda (S)",
+            "agelessthan25": 1373,
+            "totalnum": 4042
+        },
+        {
+            "city": "Kulin (S)",
+            "agelessthan25": 6,
+            "totalnum": 84
+        },
+        {
+            "city": "Kwinana (C)",
+            "agelessthan25": 1652,
+            "totalnum": 5263
+        },
+        {
+            "city": "Lake Grace (S)",
+            "agelessthan25": 0,
+            "totalnum": 76
+        },
+        {
+            "city": "Ngaanyatjarraku (S)",
+            "agelessthan25": 1215,
+            "totalnum": 4797
+        },
+        {
+            "city": "Katanning (S)",
+            "agelessthan25": 332,
+            "totalnum": 1128
+        },
+        {
+            "city": "Kellerberrin (S)",
+            "agelessthan25": 24,
+            "totalnum": 290
+        },
+        {
+            "city": "Melville (C)",
+            "agelessthan25": 873,
+            "totalnum": 2774
+        },
+        {
+            "city": "Kent (S)",
+            "agelessthan25": 0,
+            "totalnum": 9
+        },
+        {
+            "city": "Kojonup (S)",
+            "agelessthan25": 88,
+            "totalnum": 328
+        },
+        {
+            "city": "Northam (S)",
+            "agelessthan25": 541,
+            "totalnum": 2171
+        },
+        {
+            "city": "Kondinin (S)",
+            "agelessthan25": 24,
+            "totalnum": 176
+        },
+        {
+            "city": "Koorda (S)",
+            "agelessthan25": 0,
+            "totalnum": 10
+        },
+        {
+            "city": "Laverton (S)",
+            "agelessthan25": 222,
+            "totalnum": 1081
+        },
+        {
+            "city": "Northampton (S)",
+            "agelessthan25": 169,
+            "totalnum": 683
+        },
+        {
+            "city": "Tasman (M)",
+            "agelessthan25": 66,
+            "totalnum": 503
+        },
+        {
+            "city": "Leonora (S)",
+            "agelessthan25": 157,
+            "totalnum": 741
+        },
+        {
+            "city": "Mandurah (C)",
+            "agelessthan25": 2020,
+            "totalnum": 6313
+        },
+        {
+            "city": "Manjimup (S)",
+            "agelessthan25": 355,
+            "totalnum": 1122
+        },
+        {
+            "city": "Meekatharra (S)",
+            "agelessthan25": 167,
+            "totalnum": 1143
+        },
+        {
+            "city": "Mukinbudin (S)",
+            "agelessthan25": 0,
+            "totalnum": 69
+        },
+        {
+            "city": "Mingenew (S)",
+            "agelessthan25": 19,
+            "totalnum": 96
+        },
+        {
+            "city": "Menzies (S)",
+            "agelessthan25": 199,
+            "totalnum": 874
+        },
+        {
+            "city": "Merredin (S)",
+            "agelessthan25": 186,
+            "totalnum": 794
+        },
+        {
+            "city": "Mundaring (S)",
+            "agelessthan25": 1231,
+            "totalnum": 4871
+        },
+        {
+            "city": "Subiaco (C)",
+            "agelessthan25": 262,
+            "totalnum": 651
+        },
+        {
+            "city": "Moora (S)",
+            "agelessthan25": 290,
+            "totalnum": 1008
+        },
+        {
+            "city": "Swan (C)",
+            "agelessthan25": 4213,
+            "totalnum": 14064
+        },
+        {
+            "city": "Tammin (S)",
+            "agelessthan25": 19,
+            "totalnum": 163
+        },
+        {
+            "city": "Morawa (S)",
+            "agelessthan25": 110,
+            "totalnum": 403
+        },
+        {
+            "city": "Mount Magnet (S)",
+            "agelessthan25": 62,
+            "totalnum": 375
+        },
+        {
+            "city": "Nungarin (S)",
+            "agelessthan25": 0,
+            "totalnum": 37
+        },
+        {
+            "city": "Mount Marshall (S)",
+            "agelessthan25": 9,
+            "totalnum": 40
+        },
+        {
+            "city": "Three Springs (S)",
+            "agelessthan25": 33,
+            "totalnum": 134
+        },
+        {
+            "city": "Waratah/Wynyard (M)",
+            "agelessthan25": 980,
+            "totalnum": 4166
+        },
+        {
+            "city": "Mosman Park (T)",
+            "agelessthan25": 116,
+            "totalnum": 275
+        },
+        {
+            "city": "Nannup (S)",
+            "agelessthan25": 0,
+            "totalnum": 94
+        },
+        {
+            "city": "Perth (C)",
+            "agelessthan25": 329,
+            "totalnum": 959
+        },
+        {
+            "city": "Pingelly (S)",
+            "agelessthan25": 42,
+            "totalnum": 475
+        },
+        {
+            "city": "Murchison (S)",
+            "agelessthan25": 87,
+            "totalnum": 220
+        },
+        {
+            "city": "Murray (S)",
+            "agelessthan25": 394,
+            "totalnum": 1410
+        },
+        {
+            "city": "Narembeen (S)",
+            "agelessthan25": 18,
+            "totalnum": 75
+        },
+        {
+            "city": "Nedlands (C)",
+            "agelessthan25": 89,
+            "totalnum": 285
+        },
+        {
+            "city": "Plantagenet (S)",
+            "agelessthan25": 121,
+            "totalnum": 588
+        },
+        {
+            "city": "Narrogin (S)",
+            "agelessthan25": 269,
+            "totalnum": 1081
+        },
+        {
+            "city": "Peppermint Grove (S)",
+            "agelessthan25": 63,
+            "totalnum": 93
+        },
+        {
+            "city": "Port Hedland (T)",
+            "agelessthan25": 2117,
+            "totalnum": 9766
+        },
+        {
+            "city": "Quairading (S)",
+            "agelessthan25": 17,
+            "totalnum": 276
+        },
+        {
+            "city": "Ravensthorpe (S)",
+            "agelessthan25": 16,
+            "totalnum": 139
+        },
+        {
+            "city": "Rockingham (C)",
+            "agelessthan25": 3027,
+            "totalnum": 9902
+        },
+        {
+            "city": "Southern Midlands (M)",
+            "agelessthan25": 321,
+            "totalnum": 1414
+        },
+        {
+            "city": "Sandstone (S)",
+            "agelessthan25": 0,
+            "totalnum": 0
+        },
+        {
+            "city": "Serpentine-Jarrahdale (S)",
+            "agelessthan25": 573,
+            "totalnum": 1994
+        },
+        {
+            "city": "Shark Bay (S)",
+            "agelessthan25": 83,
+            "totalnum": 324
+        },
+        {
+            "city": "South Perth (C)",
+            "agelessthan25": 705,
+            "totalnum": 1960
+        },
+        {
+            "city": "Stirling (C)",
+            "agelessthan25": 2458,
+            "totalnum": 9244
+        },
+        {
+            "city": "Perenjori (S)",
+            "agelessthan25": 19,
+            "totalnum": 206
+        },
+        {
+            "city": "West Coast (M)",
+            "agelessthan25": 278,
+            "totalnum": 1322
+        },
+        {
+            "city": "West Tamar (M)",
+            "agelessthan25": 513,
+            "totalnum": 2072
+        },
+        {
+            "city": "Toodyay (S)",
+            "agelessthan25": 147,
+            "totalnum": 543
+        },
+        {
+            "city": "West Arthur (S)",
+            "agelessthan25": 0,
+            "totalnum": 109
+        },
+        {
+            "city": "Unincorp. Other Territories",
+            "agelessthan25": 173,
+            "totalnum": 908
+        },
+        {
+            "city": "Trayning (S)",
+            "agelessthan25": 17,
+            "totalnum": 59
+        },
+        {
+            "city": "Alice Springs (T)",
+            "agelessthan25": 3673,
+            "totalnum": 17133
+        },
+        {
+            "city": "Woodanilling (S)",
+            "agelessthan25": 0,
+            "totalnum": 27
+        },
+        {
+            "city": "Upper Gascoyne (S)",
+            "agelessthan25": 163,
+            "totalnum": 483
+        },
+        {
+            "city": "Victoria Park (T)",
+            "agelessthan25": 589,
+            "totalnum": 2309
+        },
+        {
+            "city": "Wandering (S)",
+            "agelessthan25": 0,
+            "totalnum": 3
+        },
+        {
+            "city": "Victoria Plains (S)",
+            "agelessthan25": 22,
+            "totalnum": 93
+        },
+        {
+            "city": "Wanneroo (C)",
+            "agelessthan25": 2772,
+            "totalnum": 9765
+        },
+        {
+            "city": "Waroona (S)",
+            "agelessthan25": 109,
+            "totalnum": 380
+        },
+        {
+            "city": "Vincent (C)",
+            "agelessthan25": 347,
+            "totalnum": 1319
+        },
+        {
+            "city": "Wagin (S)",
+            "agelessthan25": 34,
+            "totalnum": 127
+        },
+        {
+            "city": "Westonia (S)",
+            "agelessthan25": 0,
+            "totalnum": 6
+        },
+        {
+            "city": "Wagait (S)",
+            "agelessthan25": 36,
+            "totalnum": 199
+        },
+        {
+            "city": "Palmerston (C)",
+            "agelessthan25": 4173,
+            "totalnum": 14651
+        },
+        {
+            "city": "Roper Gulf (R)",
+            "agelessthan25": 4693,
+            "totalnum": 17536
+        },
+        {
+            "city": "Tiwi Islands (R)",
+            "agelessthan25": 1771,
+            "totalnum": 8143
+        },
+        {
+            "city": "Victoria Daly (R)",
+            "agelessthan25": 1655,
+            "totalnum": 6328
+        },
+        {
+            "city": "West Arnhem (R)",
+            "agelessthan25": 4550,
+            "totalnum": 17223
+        },
+        {
+            "city": "Wickepin (S)",
+            "agelessthan25": 6,
+            "totalnum": 57
+        },
+        {
+            "city": "West Daly (R)",
+            "agelessthan25": 2582,
+            "totalnum": 9300
+        },
+        {
+            "city": "Unincorporated NT",
+            "agelessthan25": 1028,
+            "totalnum": 3408
+        },
+        {
+            "city": "Williams (S)",
+            "agelessthan25": 3,
+            "totalnum": 79
+        },
+        {
+            "city": "Wiluna (S)",
+            "agelessthan25": 149,
+            "totalnum": 763
+        },
+        {
+            "city": "Unincorporated ACT",
+            "agelessthan25": 8710,
+            "totalnum": 29406
+        },
+        {
+            "city": "Wongan-Ballidu (S)",
+            "agelessthan25": 52,
+            "totalnum": 283
+        },
+        {
+            "city": "Wyalkatchem (S)",
+            "agelessthan25": 6,
+            "totalnum": 32
+        },
+        {
+            "city": "Wyndham-East Kimberley (S)",
+            "agelessthan25": 2189,
+            "totalnum": 8463
+        },
+        {
+            "city": "Yalgoo (S)",
+            "agelessthan25": 83,
+            "totalnum": 358
+        },
+        {
+            "city": "Brighton (M)",
+            "agelessthan25": 1662,
+            "totalnum": 5454
+        },
+        {
+            "city": "Burnie (C)",
+            "agelessthan25": 1805,
+            "totalnum": 5568
+        },
+        {
+            "city": "Central Coast (M) (Tas.)",
+            "agelessthan25": 1617,
+            "totalnum": 6372
+        },
+        {
+            "city": "Central Highlands (M) (Tas.)",
+            "agelessthan25": 77,
+            "totalnum": 382
+        },
+        {
+            "city": "Circular Head (M)",
+            "agelessthan25": 1538,
+            "totalnum": 5253
+        },
+        {
+            "city": "Clarence (C)",
+            "agelessthan25": 2089,
+            "totalnum": 8131
+        },
+        {
+            "city": "Yilgarn (S)",
+            "agelessthan25": 4,
+            "totalnum": 165
+        },
+        {
+            "city": "York (S)",
+            "agelessthan25": 53,
+            "totalnum": 398
+        },
+        {
+            "city": "Break O'Day (M)",
+            "agelessthan25": 251,
+            "totalnum": 847
+        },
+        {
+            "city": "Derwent Valley (M)",
+            "agelessthan25": 468,
+            "totalnum": 1780
+        },
+        {
+            "city": "Devonport (C)",
+            "agelessthan25": 1521,
+            "totalnum": 6079
+        },
+        {
+            "city": "Dorset (M)",
+            "agelessthan25": 148,
+            "totalnum": 761
+        },
+        {
+            "city": "Flinders (M) (Tas.)",
+            "agelessthan25": 64,
+            "totalnum": 730
+        },
+        {
+            "city": "George Town (M)",
+            "agelessthan25": 318,
+            "totalnum": 1057
+        },
+        {
+            "city": "Glamorgan/Spring Bay (M)",
+            "agelessthan25": 197,
+            "totalnum": 765
+        },
+        {
+            "city": "Glenorchy (C)",
+            "agelessthan25": 2433,
+            "totalnum": 9069
+        },
+        {
+            "city": "Hobart (C)",
+            "agelessthan25": 1023,
+            "totalnum": 3400
+        },
+        {
+            "city": "Huon Valley (M)",
+            "agelessthan25": 1617,
+            "totalnum": 6321
+        },
+        {
+            "city": "Kentish (M)",
+            "agelessthan25": 346,
+            "totalnum": 1312
+        },
+        {
+            "city": "King Island (M)",
+            "agelessthan25": 41,
+            "totalnum": 194
+        },
+        {
+            "city": "Kingborough (M)",
+            "agelessthan25": 1281,
+            "totalnum": 5635
+        },
+        {
+            "city": "Latrobe (M) (Tas.)",
+            "agelessthan25": 410,
+            "totalnum": 2377
+        },
+        {
+            "city": "Launceston (C)",
+            "agelessthan25": 2874,
+            "totalnum": 9180
+        },
+        {
+            "city": "Meander Valley (M)",
+            "agelessthan25": 583,
+            "totalnum": 2345
+        },
+        {
+            "city": "Northern Midlands (M)",
+            "agelessthan25": 295,
+            "totalnum": 1303
+        },
+        {
+            "city": "Sorell (M)",
+            "agelessthan25": 616,
+            "totalnum": 2569
+        },
+        {
+            "city": "Coomalie (S)",
+            "agelessthan25": 267,
+            "totalnum": 1194
+        },
+        {
+            "city": "Barkly (R)",
+            "agelessthan25": 4331,
+            "totalnum": 16150
+        },
+        {
+            "city": "Belyuen (S)",
+            "agelessthan25": 155,
+            "totalnum": 581
+        },
+        {
+            "city": "Darwin (C)",
+            "agelessthan25": 6053,
+            "totalnum": 24124
+        },
+        {
+            "city": "Central Desert (R)",
+            "agelessthan25": 2639,
+            "totalnum": 11077
+        },
+        {
+            "city": "East Arnhem (R)",
+            "agelessthan25": 7901,
+            "totalnum": 29259
+        },
+        {
+            "city": "Katherine (T)",
+            "agelessthan25": 1794,
+            "totalnum": 7890
+        },
+        {
+            "city": "Litchfield (M)",
+            "agelessthan25": 2269,
+            "totalnum": 9928
+        },
+        {
+            "city": "MacDonnell (R)",
+            "agelessthan25": 5187,
+            "totalnum": 18637
+        }
+    ]
+}

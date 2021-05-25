@@ -4,7 +4,7 @@ from lxml import etree
 import xmltodict, json
 import urllib.request as urllib2
 
-URL_CAPABILITY = 'http://openapi.aurin.org.au/csw?request=GetCapabilities&service=CSW'
+URL_CAPABILITY = 'http://openapi.aurin.org.au/wfs?request=GetCapabilities&service=WFS'
 URL_TITLE = 'http://openapi.aurin.org.au/csw?request=GetRecords&service=CSW&versi'\
     +'on=2.0.2&typeNames=csw:Record&elementSetName=full&resultType=results&constraintLan'\
     +'guage=CQL_TEXT&constraint_language_version=1.1.0&maxRecords='

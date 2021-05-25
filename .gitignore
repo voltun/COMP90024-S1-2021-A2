@@ -1,9 +1,6 @@
 # Custom config file
 auth.cfg
 
-# data files
-*.txt
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
