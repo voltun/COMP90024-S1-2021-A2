@@ -2,8 +2,8 @@
 COMP90024 Cloud &amp; Cluster Computing, Semester 1 2021, Assignment 2
 
 Team members:
-- Snabhiraja
-- Kenneth 
+- Sanmathi Kumar Nabhiraja
+- Kenneth Godwin Zhang
 - Ryan Chow
 - Yajing Zhang
 - Nicholas Wong
@@ -14,6 +14,12 @@ Team members:
 - To run playbook: ./run-nectar.sh &lt;MRC email&gt;
 - Note: Twitter API developer account should have at least standard v1.1 access.
 
+<b>Deploy system</b>
+- Ensure your working directory is /Ansible/
+- Run the following command to start Ansible deployment:
+`./run-nectar.sh <MRC registered email>`
+- Enter your MRC password when prompted.
+- Enter your sudo password when prompted.
 
 <b>Access 3-Nodes CouchDB</b>
 - Access via Fauxton GUI interface [([Connect to Cisco Anyconnect)](https://studentit.unimelb.edu.au/wireless-vpn/vpn)
