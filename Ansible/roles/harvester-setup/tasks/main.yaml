@@ -2,12 +2,8 @@
 # Install dependencies for harvesters
 - name: Install harvester python dependencies
   pip:
-    name: ['tweepy', 'lxml', 'xmltodict', 'couchdb']
+    name: ['tweepy', 'lxml', 'xmltodict', 'couchdb', 'pandas']
     state: present
-
-# # Set python environment path
-# - name: Set Python path
-#   shell: export PATH="$PATH:/usr/local/bin/python"
 
 - name: Clone git repo
   git:
