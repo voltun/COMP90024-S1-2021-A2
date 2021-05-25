@@ -1,5 +1,13 @@
 ---
 
+# Install WebApp dependencies
+- name: Install dependencies
+  become: yes
+  apt:
+    name: ['nodejs', 'npm']
+    force_apt_get: yes
+    state: present
+
 # Clone github repo
 - name: Clone git repo
   git:
