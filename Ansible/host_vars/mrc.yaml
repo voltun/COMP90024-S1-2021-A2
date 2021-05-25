@@ -1,0 +1,59 @@
+# Common vars
+availability_zone: melbourne-qh2-uom
+
+# Volume
+volumes:
+  - vol_name: HARVESTER-vol-1
+    vol_size: 100
+    vol_desc: 'Volume for Twitter/AURIN Harvester'
+  - vol_name: DB-vol-1
+    vol_size: 100
+    vol_desc: 'Volume for CouchDB Cluster #1'
+  # - vol_name: DB-vol-2
+  #   vol_size: 100
+  #   vol_desc: 'Volume for CouchDB Cluster #2'
+  # - vol_name: WA-vol-1
+  #   vol_size: 100
+  #   vol_desc: 'Volume for WebApp Server hosting'
+
+# Security group
+security_groups:
+  - name: SSH_prod
+    description: "Security group for SSH access"
+    protocol: tcp
+    port_range_min: 22
+    port_range_max: 22
+    remote_ip_prefix: 0.0.0.0/0
+  - name: HTTP_prod
+    description: "HTTP open to world"
+    protocol: tcp
+    port_range_min: 80
+    port_range_max: 80
+    remote_ip_prefix: 0.0.0.0/0
+
+# Instance
+# NOTE: Make sure instance names contain keyword:
+# Harvester : For harvester instances
+# CouchDB : For CouchDB instances
+# WebApp : For Web server instances
+instances:
+  - name: VM01-Harvester
+    volumes: 'HARVESTER-vol-1'
+  - name: VM02-CouchDB-1
+    volumes: 'DB-vol-1'
+  # - name: VM03-CouchDB-2
+  #   volumes: 'DB-vol-2'
+  # - name: VM04-WebApp-Server
+  #   volumes: 'WA-vol-1'
+
+# TODO Separate harvesters/ db/ webapp instances into groups
+
+# NeCTAR Ubuntu 20.04 LTS (Focal) amd64
+instance_image: f8b79936-6616-4a22-b55d-0d0a1d27bceb
+instance_key_name: MRC_SSH_Nic
+
+# Flavor for harvesters and CouchDB instances
+instance_flavor: uom.mse.2c9g
+
+# Flavor for WebApp instances
+instance_webapp_flavor: uom.mse.1c4g

@@ -1,0 +1,36 @@
+---
+# Connect into VM
+- name: Wait for connection
+  wait_for:
+    host: "{{ item.openstack.public_v4 }}"
+    port: 22
+    timeout: 120
+    search_regex: OpenSSH
+  loop: "{{ os_instance.results }}"
+
+# Add CouchDB instances' IP into groups
+- name: Adding CouchDB hosts to inventory group
+  add_host:
+    name: " {{ item.openstack.name }}"
+    groups: dbservers
+    ansible_ssh_host: "{{ item.openstack.public_v4 }}"
+  when: 'item.openstack.name | regex_search(".*CouchDB.*")'
+  loop: '{{ os_instance.results }}'
+
+# Add Harvester instances' IP into groups
+- name: Adding Harvester hosts to inventory group
+  add_host:
+    name: " {{ item.openstack.name }}"
+    groups: harvesters
+    ansible_ssh_host: "{{ item.openstack.public_v4 }}"
+  when: 'item.openstack.name | regex_search(".*Harvester.*")'
+  loop: '{{ os_instance.results }}'
+
+# Add WebApp instances' IP into groups
+- name: Adding WebApp hosts to inventory group
+  add_host:
+    name: " {{ item.openstack.name }}"
+    groups: webservers
+    ansible_ssh_host: "{{ item.openstack.public_v4 }}"
+  when: 'item.openstack.name | regex_search(".*WebApp.*")'
+  loop: '{{ os_instance.results }}'

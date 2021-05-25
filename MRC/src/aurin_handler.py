@@ -1,14 +1,17 @@
-from _settings import CFG_AURIN, AURIN_OUT_FILE
+from _settings import CFG_AURIN, AURIN_TITLE_FILE, AURIN_DATA_FILE,\
+AURIN_FEATURE_FILE, CONS_SEP
 from lxml import etree
+import xmltodict, json
 import urllib.request as urllib2
 
 URL_CAPABILITY = 'http://openapi.aurin.org.au/csw?request=GetCapabilities&service=CSW'
-URL_GETDATASET = 'http://openapi.aurin.org.au/csw?request=GetRecords&service=CSW&versi'\
+URL_TITLE = 'http://openapi.aurin.org.au/csw?request=GetRecords&service=CSW&versi'\
     +'on=2.0.2&typeNames=csw:Record&elementSetName=full&resultType=results&constraintLan'\
     +'guage=CQL_TEXT&constraint_language_version=1.1.0&maxRecords='
-URL_DESC_DATASET = "http://openapi.aurin.org.au/csw?request=DescribeRecord&service=CSW&"\
-    + "typeName=\'ABS - Jobs In Australia - All Jobs (GCCSA) 2011-2018\'"
-
+URL_DESC_DATASET = "http://openapi.aurin.org.au/wfs?request=DescribeFeatureType&"\
+    +"service=WFS&version=1.1.0&typeName="
+URL_FETCH_DATA = 'http://openapi.aurin.org.au/wfs?request=GetFeature&service=WFS&'\
+    +'version=1.1.0&TypeName='
 
 class AurinHandler:
     """
@@ -52,7 +55,7 @@ class AurinHandler:
         return handler.read()
 
 
-    def getCapabilities(self):
+    def queryCapabilities(self):
         """
         Gets all capabilities of AURIN OpenAPI service.
         """
@@ -60,10 +63,10 @@ class AurinHandler:
         xml = self.__openapi_request(URL_CAPABILITY)
         root = etree.fromstring(xml)
         print('================ CAPABILITIES ================')
-        # print(etree.tostring(root, pretty_print=True).decode())
+        print(etree.tostring(root, pretty_print=True).decode())
 
 
-    def getDatasetTitle(self, max_records:str):
+    def queryDatasetTitle(self, max_records:str):
         """
         Gets N number of dataset titles from AURIN. Stores the output onto
         a text file.
@@ -71,37 +74,72 @@ class AurinHandler:
         max_records (int) - Maximum number of dataset titles to fetch
         """
 
-        xml = self.__openapi_request(URL_GETDATASET + max_records)
+        xml = self.__openapi_request(URL_TITLE + str(max_records))
         root = etree.fromstring(xml)
         # print(etree.tostring(root, pretty_print=True).decode())
 
         # Outputs all datasets onto a file
-        with open(AURIN_OUT_FILE, 'w') as outfile:
+        with open(AURIN_TITLE_FILE, 'w') as outfile:
             for dataset in root.findall(".//csw:Record", root.nsmap):
                 outfile.write(dataset.find(".//dc:title", root.nsmap).text + '\n')
+                outfile.write("Identifier:\t" + dataset.find(".//dc:identifier", \
+                    root.nsmap).text + "\n\n")
                 # print('Dataset: '+dataset.find(".//dc:title", root.nsmap).text)
                 # print(dataset.find(".//dc:rights", root.nsmap).text)
-            print("All available AURIN datasets written to " + AURIN_OUT_FILE)
+            print("All available AURIN datasets written to " + AURIN_TITLE_FILE)
     
-    def test(self):
-        xml = self.__openapi_request(URL_DESC_DATASET)
-        root = etree.fromstring(xml)
-        print(etree.tostring(root, pretty_print=True).decode())
-    # def query(self, dataset):
-    #     # Query the attributes of the first dataset
-    #     dataset = root.findall(".//dc:title", root.nsmap)[0].text
-    #     url = 'http://openapi.aurin.org.au/wfs?request=DescribeFeatureType&service=WFS&version=1.1.0&typeName='+dataset
-    #     print('================ DATASET PROPERTIES ================')
-    #     print('Query URL: '+url)
-    #     xml = openapi_request(url)
-    #     root = etree.fromstring(xml)
-    #     print(etree.tostring(root, pretty_print=True))
 
-# # Get the first feature (row) of the first dataset
-# url = 'http://openapi.aurin.org.au/wfs?request=GetFeature&service=WFS&version=1.1.0&TypeName='+dataset+'&MaxFeatures=1'
-# print('================ FIRST FEATURE ================')
-# print('Query URL: '+url)
-# xml = openapi_request(url)
-# root = etree.fromstring(xml)
-# print(etree.tostring(root, pretty_print=True))
+    def queryFeatureType(self, dataset):
+        """
+        Query the headers of the dataset then prints it out.
+
+        dataset (str) - dataset identifier or non-space string of dataset name
+        """
+        
+        url = URL_DESC_DATASET + dataset
+        print("="*CONS_SEP+" FETCHING DATASET ATTRIBUTES "+"="*CONS_SEP)
+        print('Query URL: '+url)
+        xml = self.__openapi_request(url)
+        root = etree.fromstring(xml)
+        # print(etree.tostring(root, pretty_print=True).decode())
+
+        # Write dataset output to specified file
+        with open(AURIN_FEATURE_FILE, 'w') as outfile:
+            outfile.write(etree.tostring(root, pretty_print=True).decode())
+                # print('Dataset: '+dataset.find(".//dc:title", root.nsmap).text)
+                # print(dataset.find(".//dc:rights", root.nsmap).text)
+            print("Dataset properties written to " + AURIN_FEATURE_FILE + "\n\n")
+
+
+    def queryDataset(self, dataset:str, max_rows=None):
+        """
+        Fetches data instances of given dataset from AURIN API. If
+        max_rows is not specified, fetches the entire entry by default.
+
+        Writes output to a specified txt file. 
+
+        dataset (str) - dataset identifier or non-space string of dataset name.
+        max_rows (int) - DEFAULT=None; If specified, fetches max_rows \
+            number of rows. Must be > 0.
+        """
+        if max_rows is None:
+            url = URL_FETCH_DATA + dataset        
+        else:
+            url = URL_FETCH_DATA + dataset + "&MaxFeatures=" + str(max_rows)
+        
+        print("="*CONS_SEP+" FETCHING DATA FROM AURIN "+"="*CONS_SEP)
+        print('Query URL: '+url)
+        xml = self.__openapi_request(url)
+        # Convert xml structured AURIN data string into JSON string
+        aurin_dict = xmltodict.parse(xml)
+        aurin_json = json.dumps(aurin_dict, indent=4)
+        # root = etree.fromstring(xml)
+        # print(etree.tostring(root, pretty_print=True).decode())
+
+        # Write dataset output to specified file
+        with open(AURIN_DATA_FILE, 'w') as outfile:
+            outfile.write(aurin_json)
+                # print('Dataset: '+dataset.find(".//dc:title", root.nsmap).text)
+                # print(dataset.find(".//dc:rights", root.nsmap).text)
+            print("Rows of data written to " + AURIN_DATA_FILE + "\n\n")
 

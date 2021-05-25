@@ -1,0 +1,50 @@
+# Provision VM instance(s) on MRC
+- name: Deploy MRC instances
+  hosts: localhost
+  vars_files: "host_vars/mrc.yaml"
+
+  roles:
+    # - role: openstack-common
+    - role: openstack-volume
+    - role: openstack-security-group
+    - role: openstack-instance
+
+# Open SSH into the provisioned VM(s)
+- name: Open SSH connecton into VM(s)
+  hosts: localhost
+
+  roles:
+    - role: instance-connection
+
+# Setup and configure CouchDB instances
+- name: Configure CouchDB instances
+  hosts: dbservers
+
+  roles:
+    - role: instance-internet-access
+    - role: openstack-common
+    - role: db-setup
+
+# Setup and configure Harvester instances
+- name: Configure Harvester instances
+  hosts: harvesters
+
+  roles:
+    - role: instance-internet-access
+    - role: openstack-common
+
+# Setup and configure Web server instances
+- name: Configure WebApp server instances
+  hosts: webservers
+
+  roles:
+    - role: instance-internet-access
+    - role: openstack-common
+
+# TODO run VM scripts
+
+# - name: DEBUG - remove instances
+#   hosts: localhost
+
+#   roles:
+#     - role: debug-rm-instance

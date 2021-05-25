@@ -1,0 +1,9 @@
+---
+# Install dependencies for harvesters
+- name: Install tweepy
+  become: yes
+  apt:
+    name: ['tweepy']
+    state: latest
+    update-cache: yes
+# sudo apt-get install tweepy

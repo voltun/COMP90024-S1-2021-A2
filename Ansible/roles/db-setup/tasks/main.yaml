@@ -1,0 +1,10 @@
+---
+# Ensure Apache is installed
+- name: Install Apache
+  apt:
+    name: ['apache2']
+    update_cache: yes
+    state: present
+  when: ansible_distribution == "Ubuntu"
+
+# Install CouchDB
