@@ -130,3 +130,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Node js installer
+node_modules
+package-lock.json
+.env
