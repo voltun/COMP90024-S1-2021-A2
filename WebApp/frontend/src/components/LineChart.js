@@ -24,8 +24,8 @@ const options = {
 };
 
 const LineChart = (props) => (
-  <>
-    <Line data={props.data} options={options} />
+ <>
+    <Line data={props.data} options={props.options ? props.options : options} />
   </>
 );
 
