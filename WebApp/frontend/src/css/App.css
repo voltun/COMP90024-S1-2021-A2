@@ -6,6 +6,14 @@ body {
   display: flex;
 }
 
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #4D4B03;
+  color: rgb(243, 235, 235);
+  font-size: 15px;
+}
+
 .box {
   height: 350px;
   box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 4%), 0 6.7px 5.3px rgb(0 0 0 / 4%), 0 12.5px 10px rgb(0 0 0 / 4%), 0 22.3px 17.9px rgb(0 0 0 / 4%), 0 41.8px 33.4px rgb(0 0 0 / 4%), 0 100px 80px rgb(0 0 0 / 4%);
