@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import CustomMapComponent from "./components/CustomMapComponent";
 import HorizontalBarChart from "./components/HorizontalBarChart";
 import { fetchFakeBarChartData } from "./api/fetchFakeMapData";
+import LineChart from "./components/LineChart";
 import {Pie} from 'react-chartjs-2';
 
 
@@ -49,40 +50,33 @@ function App() {
 
   //Get horizontal data
   let { horizontalBarData, optionsLocal } = fetchFakeBarChartData(labels, data);
-  let [options, setOptions] = useState(optionsLocal);
-  let [flipOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Peolple aged between 18 and 60' } } } });
-
+  let [options, setOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Number of people' } } } });
+  let [flipOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Number of twitters' } } } });
+  console.log(tweets)
 
   return (
       <div className="App">
-        <div className="row">
-          <div className="chart-div-container box">
-            <Pie data={tweets} options={{ maintainAspectRatio: false ,animation:false, }}/>
-
-          </div>
-          <div className="chart-div-container box">
-            <Pie data={population} options={{ maintainAspectRatio: false ,animation:false, legend: { display: true, position: "right" },datalabels: {
-                display: true,
-                color: "black",
-              }}}/>
-          </div>
-
+  <div class="header">
+  <h1>COMP90024-S1-2021-A2</h1>
+  <h3>Correlating tweets from Australian cities to its demographics </h3>
+</div>
+      <div className="row">
+        <div className="map-div-container box">
+          <CustomMapComponent funcToChange={{ "optionsFunc": setOptions, "dataFunc": setTweets,"dataFunc2": setpopulation, "dataFunc3": setage }} changeData={population}/>
         </div>
-
-
-        {/*row 2*/}
-        <div className="row">
-          <div className="map-div-container box">
-            <CustomMapComponent funcToChange={{ "optionsFunc": setOptions, "dataFunc": setData }} />
-          </div>
-          <div className="chart-div-container box">
-            <HorizontalBarChart data={age} options={flipOptions} />
-          </div>
-
+        <div className="chart-div-container box">
+          <HorizontalBarChart data={tweets} options={flipOptions} />
         </div>
-
-
       </div>
+      <div className="row">
+        <div className="chart-div-container box">
+          <HorizontalBarChart data={population} options={options} />
+        </div>
+        <div className="chart-div-container box">
+          <LineChart data={age} />
+        </div>
+      </div>
+    </div>
   );
 }
 
