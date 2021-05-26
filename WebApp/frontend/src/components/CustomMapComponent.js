@@ -10,7 +10,7 @@ export default function CustomMapComponent(props) {
     const lng = 135.6387;
     const lat = -25.6170;
     const zoom = 3;
-
+     const [tweets, setTweets] = React.useState(null);
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
@@ -70,6 +70,8 @@ export default function CustomMapComponent(props) {
                 },
                 // firstSymbolId
             );
+            
+            
 
 
 
@@ -77,10 +79,46 @@ export default function CustomMapComponent(props) {
             map.on('click', 'random-points-data', function (e) {
                 console.log("***")
                 console.log(props);
-                props.funcToChange.dataFunc([...Array(6)].map(e => parseInt(Math.random() * 100) | 0));
-
+                //props.funcToChange.dataFunc([1000])
+                fetch("/view")
+        .then((body) => body.json())
+        .then((tweets) => {
+            setTweets(tweets);
+            // var description = e.features[0].properties.description;
+            console.log(description)
+                var getIndex = tweets["labels"].indexOf(description);
+                tweets["datasets"][0]["data"] = tweets["datasets"][0]["data"].slice(getIndex, getIndex + 1);
+                tweets["labels"] = tweets["labels"].slice(getIndex, getIndex + 1);
+                props.funcToChange.dataFunc(tweets);
+        }
+                )
+                fetch("/population")
+        .then((body) => body.json())
+        .then((population) => {
+            //setTweets(population);
+            // var description = e.features[0].properties.description;
+            console.log(description)
+                var getIndex = population["labels"].indexOf(description);
+                population["datasets"][0]["data"] = population["datasets"][0]["data"].slice(getIndex, getIndex + 1);
+                population["labels"] = population["labels"].slice(getIndex, getIndex + 1);
+                props.funcToChange.dataFunc2(population);
+        }
+                )
+                fetch("/age")
+        .then((body) => body.json())
+        .then((age) => {
+            //setTweets(population);
+            // var description = e.features[0].properties.description;
+            console.log(description)
+                var getIndex = age["labels"].indexOf(description);
+                age["datasets"][0]["data"] = age["datasets"][0]["data"].slice(getIndex, getIndex + 1);
+                age["labels"] = age["labels"].slice(getIndex, getIndex + 1);
+                props.funcToChange.dataFunc3(age);
+        }
+                )
                 var coordinates = e.features[0].geometry.coordinates.slice();
                 var description = e.features[0].properties.description;
+                console.log(description, tweets)
 
 
                 // Ensure that if the map is zoomed out such that multiple
