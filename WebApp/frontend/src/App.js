@@ -49,10 +49,21 @@ function App() {
 
 
   //Get horizontal data
+  //Get horizontal data
   let { horizontalBarData, optionsLocal } = fetchFakeBarChartData(labels, data);
-  let [options, setOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Number of people' } } } });
-  let [flipOptions] = useState({ ...optionsLocal, ...{ indexAxis: "x", plugins: { legend: { position: 'bottom', }, title: { display: true, text: 'Number of twitters' } } } });
-  console.log(tweets)
+  const placeholder = (title) => ({
+    ...optionsLocal,
+    ...{
+      indexAxis: "x",
+      plugins: {
+        legend: { position: "bottom" },
+        title: { display: true, text: title }
+      }
+    }
+  });
+  let [options, setOptions] = useState(placeholder("Number of People"));
+  let [flipOptions] = useState(placeholder("Number of Tweets"));
+  let [options1] = useState(placeholder("People age between 15-40"));
 
   return (
       <div className="App">
@@ -73,7 +84,7 @@ function App() {
           <HorizontalBarChart data={population} options={options} />
         </div>
         <div className="chart-div-container box">
-          <LineChart data={age} />
+          <LineChart data={age} options={options1}/>
         </div>
       </div>
     </div>
